@@ -11,6 +11,8 @@ Gimbal::Gimbal(const std::string & config_path)
 {
   auto yaml = tools::load(config_path);
   auto com_port = tools::read<std::string>(yaml, "com_port");
+  skip_crc_ = false;  // 默认
+  if (yaml["skip_cboard_crc"]) skip_crc_ = tools::read<bool>(yaml, "skip_cboard_crc");
 
   try {
     serial_.setPort(com_port);
@@ -160,11 +162,15 @@ void Gimbal::read_thread()
     // tools::logger()->info("[Gimbal] Received data, CRC: 0x{:04X}", crc);
 
     if (!tools::check_crc16(reinterpret_cast<uint8_t *>(&rx_data_), sizeof(rx_data_))) {
-      uint16_t received_crc = rx_data_.crc16;
-      uint16_t calculated_crc = tools::get_crc16(
-        reinterpret_cast<uint8_t *>(&rx_data_), sizeof(rx_data_) - sizeof(rx_data_.crc16));
-      tools::logger()->info("[Gimbal] CRC16 check failed. Received: 0x{:04X}, Calculated: 0x{:04X}", received_crc, calculated_crc);
-      continue;
+      if (!skip_crc_) {
+        uint16_t received_crc = rx_data_.crc16;
+        uint16_t calculated_crc = tools::get_crc16(
+          reinterpret_cast<uint8_t *>(&rx_data_), sizeof(rx_data_) - sizeof(rx_data_.crc16));
+        tools::logger()->info("[Gimbal] CRC16 check failed. Received: 0x{:04X}, Calculated: 0x{:04X}", received_crc, calculated_crc);
+        error_count++;
+        continue;
+      }
+      // else: skip CRC check silently
     }
 
     uint16_t received_crc = rx_data_.crc16;
@@ -181,10 +187,15 @@ void Gimbal::read_thread()
     for (size_t i = 0; i < sizeof(rx_data_); ++i) {
       raw_hex += fmt::format("{:02x} ", reinterpret_cast<uint8_t*>(&rx_data_)[i]);
     }
-    tools::logger()->debug("[Gimbal] Raw data: {}", raw_hex);
+    // tools::logger()->debug("[Gimbal] Raw data: {}", raw_hex);
 
     // 打印四元数
-    tools::logger()->debug("[Gimbal] Quaternion: q=[{}, {}, {}, {}]", q.w(), q.x(), q.y(), q.z());
+    // tools::logger()->debug("[Gimbal] Quaternion: q=[{}, {}, {}, {}]", q.w(), q.x(), q.y(), q.z());
+
+    // 打印 yaw 和 pitch
+    float yaw_val = rx_data_.yaw;
+    float pitch_val = rx_data_.pitch;
+    tools::logger()->info("[Gimbal] Yaw: {}, Pitch: {}", yaw_val, pitch_val);
 
     std::lock_guard<std::mutex> lock(mutex_);
 

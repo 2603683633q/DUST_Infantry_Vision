@@ -90,7 +90,7 @@ private:
 
   GimbalToVision rx_data_;
   VisionToGimbal tx_data_;
-
+  bool skip_crc_ = false;
   GimbalMode mode_ = GimbalMode::IDLE;
   GimbalState state_;
   tools::ThreadSafeQueue<std::tuple<Eigen::Quaterniond, std::chrono::steady_clock::time_point>>

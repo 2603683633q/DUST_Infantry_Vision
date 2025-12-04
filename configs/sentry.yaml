@@ -52,10 +52,13 @@ max_rectangular_error: 25 # degree
 min_confidence: 0.8
 
 #####-----cboard参数-----#####
-quaternion_canid: 0x01
-bullet_speed_canid: 0x110
-send_canid: 0xff
-can_interface: "can0"
+cboard_com_port: "/dev/gimbal"
+cboard_baudrate: 115200
+skip_cboard_crc: true
+# quaternion_canid: 0x100
+# bullet_speed_canid: 0x101
+# send_canid: 0xff
+# can_interface: "can0"
 
 #####-----tracker参数-----#####
 min_detect_count: 5
@@ -82,6 +85,8 @@ auto_fire: true # 是否由自瞄控制射击
 #####-----decider参数-----#####
 mode: 1
 
+Q_yaw: [9e6, 0] # yaw过程噪声
+
 #####-----工业相机标定参数-----#####
 R_gimbal2imubody: [1, 0, 0, 0, 1, 0, 0, 0, 1]
 
@@ -94,3 +99,6 @@ distort_coeffs: [-0.0209453389287673, 0.15028138841073832, -0.000651772211323450
 # 标定板同竖直摆放时的偏角: yaw123.89 pitch14.05 roll-0.86 degree
 R_camera2gimbal: [0.01928451708725664, 0.00012696140743255463, 0.99981402834802846, -0.99981344688553653, -0.0010834913551969569, 0.019284643459122196, 0.0010857382619952124, -0.99999940496346484, 0.00010604311483339372]
 t_camera2gimbal: [0.13089617453251859, 0.0038468007459533785, 0.094139945222010288]
+
+#####-----串口参数-----#####
+com_port: "/dev/gimbal"

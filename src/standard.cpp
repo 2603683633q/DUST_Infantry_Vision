@@ -7,7 +7,7 @@
 #include <thread>
 
 #include "io/camera.hpp"
-// #include "io/cboard.hpp"
+#include "io/cboard.hpp"
 #include "tasks/auto_aim/aimer.hpp"
 #include "tasks/auto_aim/multithread/commandgener.hpp"
 #include "tasks/auto_aim/shooter.hpp"

@@ -19,7 +19,7 @@ CBoard::CBoard(const std::string & config_path)
   if (yaml["cboard_com_port"]) com_port_ = tools::read<std::string>(yaml, "cboard_com_port");
   baudrate_ = 115200;  // 默认
   if (yaml["cboard_baudrate"]) baudrate_ = tools::read<int>(yaml, "cboard_baudrate");
-  skip_crc_ = false;  // 默认
+  skip_crc_ = true;  // 默认
   if (yaml["skip_cboard_crc"]) skip_crc_ = tools::read<bool>(yaml, "skip_cboard_crc");
 
   try {
