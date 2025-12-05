@@ -87,7 +87,7 @@ int main(int argc, char * argv[])
 
     auto targets = tracker.track(armors, t);
 
-    auto command = aimer.aim(targets, t, cboard.bullet_speed);
+  auto command = aimer.aim(targets, t, cboard.bullet_speed, solver.R_gimbal2world());
 
     cboard.send(command);
 
@@ -95,8 +95,8 @@ int main(int argc, char * argv[])
     nlohmann::json data;
     data["t"] = tools::delta_time(std::chrono::steady_clock::now(), t0);
     data["mode"] = static_cast<int>(mode);
-    data["gimbal_yaw"] = ypr[0];
-    data["gimbal_pitch"] = ypr[1];
+  data["gimbal_yaw"] = ypr[0];
+  data["gimbal_pitch"] = -ypr[1];  // 向上为负
     data["gimbal_roll"] = ypr[2];
     data["bullet_speed"] = cboard.bullet_speed;
     data["armors_detected"] = armors.size();

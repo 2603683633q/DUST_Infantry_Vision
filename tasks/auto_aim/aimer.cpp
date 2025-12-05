@@ -31,7 +31,7 @@ Aimer::Aimer(const std::string & config_path)
 
 io::Command Aimer::aim(
   std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
-  bool to_now)
+  const Eigen::Matrix3d & R_gimbal2world, bool to_now)
 {
   if (targets.empty()) return {false, false, 0, 0};
   auto target = targets.front();
@@ -116,15 +116,25 @@ io::Command Aimer::aim(
   }
 
   // 计算最终角度
-  Eigen::Vector3d final_xyz = debug_aim_point.xyza.head(3);
+  // 转换为云台坐标系（如果传入为 Identity，则保持不变）
+  Eigen::Vector3d final_xyz_world = debug_aim_point.xyza.head(3);
+  Eigen::Vector3d final_xyz = R_gimbal2world.transpose() * final_xyz_world;
   double yaw = std::atan2(final_xyz.y(), final_xyz.x()) + yaw_offset_;
   double pitch = -(current_traj.pitch + pitch_offset_);  //世界坐标系下pitch向上为负
   return {true, false, yaw, pitch};
 }
 
+// Backwards compatible overloads
 io::Command Aimer::aim(
   std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
-  io::ShootMode shoot_mode, bool to_now)
+  bool to_now)
+{
+  return aim(targets, timestamp, bullet_speed, Eigen::Matrix3d::Identity(), to_now);
+}
+
+io::Command Aimer::aim(
+  std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
+  io::ShootMode shoot_mode, const Eigen::Matrix3d & R_gimbal2world, bool to_now)
 {
   double yaw_offset;
   if (shoot_mode == io::left_shoot && left_yaw_offset_.has_value()) {
@@ -135,10 +145,18 @@ io::Command Aimer::aim(
     yaw_offset = yaw_offset_;
   }
 
-  auto command = aim(targets, timestamp, bullet_speed, to_now);
+  auto command = aim(targets, timestamp, bullet_speed, R_gimbal2world, to_now);
   command.yaw = command.yaw - yaw_offset_ + yaw_offset;
 
   return command;
+}
+
+// Backwards compatibility
+io::Command Aimer::aim(
+  std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
+  io::ShootMode shoot_mode, bool to_now)
+{
+  return aim(targets, timestamp, bullet_speed, shoot_mode, Eigen::Matrix3d::Identity(), to_now);
 }
 
 AimPoint Aimer::choose_aim_point(const Target & target)

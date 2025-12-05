@@ -55,10 +55,11 @@ enum class GimbalMode
 
 struct GimbalState
 {
-  float yaw;
-  float yaw_vel;
-  float pitch;
-  float pitch_vel;
+  // Note: values are in radians and radians/second
+  float yaw;       // yaw angle in radians
+  float yaw_vel;   // yaw velocity in radians/sec
+  float pitch;     // pitch angle in radians
+  float pitch_vel; // pitch velocity in radians/sec
   float bullet_speed;
   uint16_t bullet_count;
 };

@@ -36,8 +36,9 @@ public:
   Eigen::Vector4d debug_xyza;
   Planner(const std::string & config_path);
 
-  Plan plan(Target target, double bullet_speed);
-  Plan plan(std::optional<Target> target, double bullet_speed);
+  Plan plan(Target target, double bullet_speed, const Eigen::Matrix3d & R_gimbal2world = Eigen::Matrix3d::Identity());
+  Plan plan(std::optional<Target> target, double bullet_speed,
+            const Eigen::Matrix3d & R_gimbal2world = Eigen::Matrix3d::Identity());
 
 private:
   double yaw_offset_;
@@ -51,8 +52,10 @@ private:
   void setup_yaw_solver(const std::string & config_path);
   void setup_pitch_solver(const std::string & config_path);
 
-  Eigen::Matrix<double, 2, 1> aim(const Target & target, double bullet_speed);
-  Trajectory get_trajectory(Target & target, double yaw0, double bullet_speed);
+  Eigen::Matrix<double, 2, 1> aim(const Target & target, double bullet_speed,
+                                  const Eigen::Matrix3d & R_gimbal2world = Eigen::Matrix3d::Identity());
+  Trajectory get_trajectory(Target & target, double yaw0, double bullet_speed,
+                            const Eigen::Matrix3d & R_gimbal2world = Eigen::Matrix3d::Identity());
 };
 
 }  // namespace auto_aim

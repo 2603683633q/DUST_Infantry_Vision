@@ -88,8 +88,8 @@ int main(int argc, char * argv[])
       solver.solve(armor);
       data["armor_x"] = armor.xyz_in_world[0];
       data["armor_y"] = armor.xyz_in_world[1];
-      data["armor_yaw"] = armor.ypr_in_world[0] * 57.3;
-      data["armor_yaw_raw"] = armor.yaw_raw * 57.3;
+  data["armor_yaw"] = armor.ypr_in_world[0];
+  data["armor_yaw_raw"] = armor.yaw_raw;
     }
 
     if (!targets.empty()) {
@@ -122,7 +122,7 @@ int main(int argc, char * argv[])
       data["vy"] = x[3];
       data["z"] = x[4];
       data["vz"] = x[5];
-      data["a"] = x[6] * 57.3;
+  data["a"] = x[6];
       data["w"] = x[7];
       data["r"] = x[8];
       data["l"] = x[9];

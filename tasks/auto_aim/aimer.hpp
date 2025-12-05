@@ -25,11 +25,22 @@ public:
   explicit Aimer(const std::string & config_path);
   io::Command aim(
     std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
-    bool to_now = true);
+    const Eigen::Matrix3d & R_gimbal2world = Eigen::Matrix3d::Identity(), bool to_now = true);
+
+  // Backwards compatible overloads without R_gimbal2world (defaults to Identity)
+  io::Command aim(
+    std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
+    bool to_now);
 
   io::Command aim(
     std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
-    io::ShootMode shoot_mode, bool to_now = true);
+    io::ShootMode shoot_mode, const Eigen::Matrix3d & R_gimbal2world = Eigen::Matrix3d::Identity(),
+    bool to_now = true);
+
+  // Backwards compatible overload without R_gimbal2world
+  io::Command aim(
+    std::list<Target> targets, std::chrono::steady_clock::time_point timestamp, double bullet_speed,
+    io::ShootMode shoot_mode, bool to_now);
 
 private:
   double yaw_offset_;

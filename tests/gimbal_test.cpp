@@ -79,10 +79,10 @@ int main(int argc, char * argv[])
     nlohmann::json data;
     data["q_yaw"] = ypr[0];
     data["q_pitch"] = ypr[1];
-    data["yaw"] = state.yaw;
-    data["vyaw"] = state.yaw_vel;
-    data["pitch"] = state.pitch;
-    data["vpitch"] = state.pitch_vel;
+  data["yaw"] = state.yaw;  // radians
+  data["vyaw"] = state.yaw_vel;  // rad/s
+  data["pitch"] = state.pitch;
+  data["vpitch"] = state.pitch_vel;
     data["bullet_speed"] = state.bullet_speed;
     data["bullet_count"] = state.bullet_count;
     data["fired"] = fired ? 1 : 0;

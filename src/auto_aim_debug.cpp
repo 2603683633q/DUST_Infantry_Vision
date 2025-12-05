@@ -60,7 +60,7 @@ int main(int argc, char * argv[])
       auto gs = gimbal.state();
 
       // Use Aimer and Shooter instead of Planner
-      auto command = aimer.aim(target ? std::list<auto_aim::Target>{*target} : std::list<auto_aim::Target>{}, std::chrono::steady_clock::now(), gs.bullet_speed);
+  auto command = aimer.aim(target ? std::list<auto_aim::Target>{*target} : std::list<auto_aim::Target>{}, std::chrono::steady_clock::now(), gs.bullet_speed, solver.R_gimbal2world());
       bool fire = shooter.shoot(command, aimer, target ? std::list<auto_aim::Target>{*target} : std::list<auto_aim::Target>{}, Eigen::Vector3d{0, 0, 0}); // gimbal_pos placeholder
 
       // Set velocities and accelerations to 0 since Aimer doesn't provide them
@@ -73,13 +73,13 @@ int main(int argc, char * argv[])
       nlohmann::json data;
       data["t"] = tools::delta_time(std::chrono::steady_clock::now(), t0);
 
-      data["gimbal_yaw"] = gs.yaw;
-      data["gimbal_yaw_vel"] = gs.yaw_vel;
-      data["gimbal_pitch"] = gs.pitch;
-      data["gimbal_pitch_vel"] = gs.pitch_vel;
+  data["gimbal_yaw"] = gs.yaw;  // radians
+  data["gimbal_yaw_vel"] = gs.yaw_vel;  // rad/s
+  data["gimbal_pitch"] = gs.pitch;  // radians
+  data["gimbal_pitch_vel"] = gs.pitch_vel;  // rad/s
 
-      data["cmd_yaw"] = command.yaw * 57.3; // Convert to degrees
-      data["cmd_pitch"] = command.pitch * 57.3;
+  data["cmd_yaw"] = command.yaw; // radians
+  data["cmd_pitch"] = command.pitch;
 
       data["fire"] = fire ? 1 : 0;
       data["fired"] = fired ? 1 : 0;

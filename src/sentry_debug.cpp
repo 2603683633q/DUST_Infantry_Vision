@@ -90,7 +90,7 @@ int main(int argc, char * argv[])
     if (tracker.state() == "lost")
       command = decider.decide(yolo, gimbal_pos, usbcam1, usbcam2, back_camera);
     else
-      command = aimer.aim(targets, timestamp, cboard.bullet_speed, cboard.shoot_mode);
+      command = aimer.aim(targets, timestamp, cboard.bullet_speed, cboard.shoot_mode, solver.R_gimbal2world());
 
     /// 发射逻辑
     command.shoot = shooter.shoot(command, aimer, targets, gimbal_pos);
@@ -121,8 +121,8 @@ int main(int argc, char * argv[])
       solver.solve(armor);
       data["armor_x"] = armor.xyz_in_world[0];
       data["armor_y"] = armor.xyz_in_world[1];
-      data["armor_yaw"] = armor.ypr_in_world[0] * 57.3;
-      data["armor_yaw_raw"] = armor.yaw_raw * 57.3;
+  data["armor_yaw"] = armor.ypr_in_world[0];
+  data["armor_yaw_raw"] = armor.yaw_raw;
     }
 
     if (!targets.empty()) {
@@ -154,7 +154,7 @@ int main(int argc, char * argv[])
       data["vy"] = x[3];
       data["z"] = x[4];
       data["vz"] = x[5];
-      data["a"] = x[6] * 57.3;
+  data["a"] = x[6];
       data["w"] = x[7];
       data["r"] = x[8];
       data["l"] = x[9];
@@ -174,12 +174,12 @@ int main(int argc, char * argv[])
     }
 
     // 云台响应情况
-    data["gimbal_yaw"] = gimbal_pos[0] * 57.3;
-    data["gimbal_pitch"] = -gimbal_pos[1] * 57.3;
+  data["gimbal_yaw"] = gimbal_pos[0];
+  data["gimbal_pitch"] = -gimbal_pos[1];
     data["shootmode"] = cboard.shoot_mode;
     if (command.control) {
-      data["cmd_yaw"] = command.yaw * 57.3;
-      data["cmd_pitch"] = command.pitch * 57.3;
+  data["cmd_yaw"] = command.yaw;
+  data["cmd_pitch"] = command.pitch;
       data["cmd_shoot"] = command.shoot;
     }
 

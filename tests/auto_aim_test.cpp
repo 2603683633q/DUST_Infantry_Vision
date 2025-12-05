@@ -86,7 +86,7 @@ int main(int argc, char * argv[])
 
     if (
       !targets.empty() && aimer.debug_aim_point.valid &&
-      std::abs(command.yaw - last_command.yaw) * 57.3 < 2)
+      std::abs(command.yaw - last_command.yaw) < (2.0 * M_PI / 180.0))
       command.shoot = true;
 
     if (command.control) last_command = command;
@@ -102,15 +102,15 @@ int main(int argc, char * argv[])
     tools::draw_text(
       img,
       fmt::format(
-        "command is {},{:.2f},{:.2f},shoot:{}", command.control, command.yaw * 57.3,
-        command.pitch * 57.3, command.shoot),
+        "command is {},{:.4f},{:.4f},shoot:{}", command.control, command.yaw, command.pitch,
+        command.shoot),
       {10, 60}, {154, 50, 205});
 
     Eigen::Quaternion gimbal_q = {w, x, y, z};
     tools::draw_text(
       img,
       fmt::format(
-        "gimbal yaw{:.2f}", (tools::eulers(gimbal_q.toRotationMatrix(), 2, 1, 0) * 57.3)[0]),
+        "gimbal yaw{:.4f}", (tools::eulers(gimbal_q.toRotationMatrix(), 2, 1, 0))[0]),
       {10, 90}, {255, 255, 255});
 
     nlohmann::json data;
@@ -121,16 +121,16 @@ int main(int argc, char * argv[])
       const auto & armor = armors.front();
       data["armor_x"] = armor.xyz_in_world[0];
       data["armor_y"] = armor.xyz_in_world[1];
-      data["armor_yaw"] = armor.ypr_in_world[0] * 57.3;
-      data["armor_yaw_raw"] = armor.yaw_raw * 57.3;
+  data["armor_yaw"] = armor.ypr_in_world[0];
+  data["armor_yaw_raw"] = armor.yaw_raw;
       data["armor_center_x"] = armor.center_norm.x;
       data["armor_center_y"] = armor.center_norm.y;
     }
 
     Eigen::Quaternion q{w, x, y, z};
     auto yaw = tools::eulers(q, 2, 1, 0)[0];
-    data["gimbal_yaw"] = yaw * 57.3;
-    data["cmd_yaw"] = command.yaw * 57.3;
+  data["gimbal_yaw"] = yaw;
+  data["cmd_yaw"] = command.yaw;
     data["shoot"] = command.shoot;
 
     if (!targets.empty()) {
@@ -167,7 +167,7 @@ int main(int argc, char * argv[])
       data["vy"] = x[3];
       data["z"] = x[4];
       data["vz"] = x[5];
-      data["a"] = x[6] * 57.3;
+  data["a"] = x[6];
       data["w"] = x[7];
       data["r"] = x[8];
       data["l"] = x[9];

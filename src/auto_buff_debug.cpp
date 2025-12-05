@@ -83,9 +83,9 @@ int main(int argc, char * argv[])
       data["buff_R_yaw"] = p.ypd_in_world[0];
       data["buff_R_pitch"] = p.ypd_in_world[1];
       data["buff_R_dis"] = p.ypd_in_world[2];
-      data["buff_yaw"] = p.ypr_in_world[0] * 57.3;
-      data["buff_pitch"] = p.ypr_in_world[1] * 57.3;
-      data["buff_roll"] = p.ypr_in_world[2] * 57.3;
+  data["buff_yaw"] = p.ypr_in_world[0];
+  data["buff_pitch"] = p.ypr_in_world[1];
+  data["buff_roll"] = p.ypr_in_world[2];
     }
 
     if (!target.is_unsolve()) {
@@ -121,10 +121,10 @@ int main(int argc, char * argv[])
       data["R_V_yaw"] = x[1];
       data["R_pitch"] = x[2];
       data["R_dis"] = x[3];
-      data["yaw"] = x[4] * 57.3;
+  data["yaw"] = x[4];
 
-      data["angle"] = x[5] * 57.3;
-      data["spd"] = x[6] * 57.3;
+  data["angle"] = x[5];
+  data["spd"] = x[6];
       if (x.size() >= 10) {
         data["spd"] = x[6];
         data["a"] = x[7];
@@ -136,12 +136,12 @@ int main(int argc, char * argv[])
 
     // 云台响应情况
     Eigen::Vector3d ypr = tools::eulers(solver.R_gimbal2world(), 2, 1, 0);
-    data["gimbal_yaw"] = ypr[0] * 57.3;
-    data["gimbal_pitch"] = ypr[1] * 57.3;
+  data["gimbal_yaw"] = ypr[0];
+  data["gimbal_pitch"] = -ypr[1];  // 向上为负
 
     if (command.control) {
-      data["cmd_yaw"] = command.yaw * 57.3;
-      data["cmd_pitch"] = command.pitch * 57.3;
+  data["cmd_yaw"] = command.yaw;
+  data["cmd_pitch"] = command.pitch;
       data["shoot"] = command.shoot ? 1 : 0;
     }
 

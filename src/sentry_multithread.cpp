@@ -106,7 +106,7 @@ int main(int argc, char * argv[])
     }
 
     else {
-      command = aimer.aim(targets, timestamp, cboard.bullet_speed);
+      command = aimer.aim(targets, timestamp, cboard.bullet_speed, solver.R_gimbal2world());
     }
 
     /// 发射逻辑

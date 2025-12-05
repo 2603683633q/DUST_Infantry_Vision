@@ -192,17 +192,21 @@ void Gimbal::read_thread()
     // 打印四元数
     // tools::logger()->debug("[Gimbal] Quaternion: q=[{}, {}, {}, {}]", q.w(), q.x(), q.y(), q.z());
 
-    // 打印 yaw 和 pitch
-    float yaw_val = rx_data_.yaw;
-    float pitch_val = rx_data_.pitch;
-    tools::logger()->info("[Gimbal] Yaw: {}, Pitch: {}", yaw_val, pitch_val);
+    // 打印 yaw 和 pitch（rx为度，转为弧度保存为state）
+    float yaw_deg = rx_data_.yaw;
+    float pitch_deg = rx_data_.pitch;
+    float yaw_rad = yaw_deg * static_cast<float>(M_PI / 180.0);
+    float pitch_rad = pitch_deg * static_cast<float>(M_PI / 180.0);
+    tools::logger()->info(
+      "[Gimbal] Yaw: {} deg, {} rad | Pitch: {} deg, {} rad", yaw_deg, yaw_rad, pitch_deg, pitch_rad);
 
     std::lock_guard<std::mutex> lock(mutex_);
 
-    state_.yaw = rx_data_.yaw;
-    state_.yaw_vel = rx_data_.yaw_vel;
-    state_.pitch = rx_data_.pitch;
-    state_.pitch_vel = rx_data_.pitch_vel;
+  // convert deg->rad for storage in state
+  state_.yaw = yaw_rad;
+  state_.yaw_vel = rx_data_.yaw_vel * static_cast<float>(M_PI / 180.0);
+  state_.pitch = pitch_rad;
+  state_.pitch_vel = rx_data_.pitch_vel * static_cast<float>(M_PI / 180.0);
     state_.bullet_speed = rx_data_.bullet_speed;
     state_.bullet_count = rx_data_.bullet_count;
 

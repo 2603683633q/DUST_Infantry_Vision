@@ -56,7 +56,7 @@ int main(int argc, char * argv[])
     while (!quit) {
       auto target = target_queue.front();
       auto gs = gimbal.state();
-      auto plan = planner.plan(target, gs.bullet_speed);
+  auto plan = planner.plan(target, gs.bullet_speed, solver.R_gimbal2world());
 
       gimbal.send(
         plan.control, plan.fire, plan.yaw, plan.yaw_vel, plan.yaw_acc, plan.pitch, plan.pitch_vel,
@@ -68,10 +68,10 @@ int main(int argc, char * argv[])
       nlohmann::json data;
       data["t"] = tools::delta_time(std::chrono::steady_clock::now(), t0);
 
-      data["gimbal_yaw"] = gs.yaw;
-      data["gimbal_yaw_vel"] = gs.yaw_vel;
-      data["gimbal_pitch"] = gs.pitch;
-      data["gimbal_pitch_vel"] = gs.pitch_vel;
+  data["gimbal_yaw"] = gs.yaw;  // radians
+  data["gimbal_yaw_vel"] = gs.yaw_vel;
+  data["gimbal_pitch"] = gs.pitch;      // 向上为负 (radians)
+  data["gimbal_pitch_vel"] = gs.pitch_vel;
 
       data["target_yaw"] = plan.target_yaw;
       data["target_pitch"] = plan.target_pitch;
