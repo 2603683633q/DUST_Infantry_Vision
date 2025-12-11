@@ -112,3 +112,11 @@ t_camera2gimbal: [0.13089617453251859, 0.0038468007459533785, 0.0941399452220102
 
 # 后置相机配置
 vid_pid_1: "2bdf:0001"
+
+#####-----planner参数-----#####
+fire_thresh: 0.003
+max_yaw_acc: 50
+R_yaw: [1]
+max_pitch_acc: 100
+Q_pitch: [9e6, 0]
+R_pitch: [1]
