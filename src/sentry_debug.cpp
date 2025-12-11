@@ -257,7 +257,7 @@ int main(int argc, char * argv[])
       auto image_points = solver.reproject_armor(aim_xyza.head(3), aim_xyza[3], target.armor_type, target.name);
       tools::draw_points(img, image_points, {0, 0, 255});
     }
-
+    //
     cv::resize(img, img, {}, 0.5, 0.5);
     tools::draw_text(back_img, fmt::format("Back armors: {}", back_armors.size()), {10, 30}, {0, 255, 255});
     cv::resize(back_img, back_img, {}, 0.5, 0.5);
