@@ -1,0 +1,328 @@
+[0.000000] (-) TimerEvent: {}
+[0.000141] (sp_vision) JobQueued: {'identifier': 'sp_vision', 'dependencies': OrderedDict()}
+[0.000160] (sp_vision) JobStarted: {'identifier': 'sp_vision'}
+[0.004303] (sp_vision) JobProgress: {'identifier': 'sp_vision', 'progress': 'cmake'}
+[0.004573] (sp_vision) Command: {'cmd': ['/usr/local/bin/cmake', '/home/rmsentry/DUST_Infantry_Vision', '-DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_vision'], 'cwd': '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'rmsentry'), ('SSH_CLIENT', '192.168.31.217 41116 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('BROWSER', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rmsentry'), ('OLDPWD', '/home/rmsentry/DUST_Infantry_Vision'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-31f83827-37f8-4b1a-a573-3cd24ab90c68.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rmsentry/DUST_Infantry_Vision/install:/home/rmsentry/DUST_Infantry_Vision/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rmsentry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/rmsentry/.local/bin:/opt/ros/humble/bin:/home/rmsentry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libusb-1.0.so.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-79bedd542a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision'), ('SSH_CONNECTION', '192.168.31.217 41116 192.168.31.155 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/local/lib/python3.10/dist-packages:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.046615] (sp_vision) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.082262] (sp_vision) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.089326] (sp_vision) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099659] (-) TimerEvent: {}
+[0.125051] (sp_vision) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.134645] (sp_vision) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.134933] (sp_vision) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.135201] (sp_vision) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.137668] (sp_vision) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.179950] (sp_vision) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.189617] (sp_vision) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.189777] (sp_vision) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.190125] (sp_vision) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.190533] (sp_vision) StdoutLine: {'line': b'-- --------------------CMAKE_BUILD_TYPE: Release--------------------\n'}
+[0.191421] (sp_vision) StdoutLine: {'line': b'-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199725] (-) TimerEvent: {}
+[0.269447] (sp_vision) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[0.299827] (-) TimerEvent: {}
+[0.349984] (sp_vision) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.353142] (sp_vision) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.358312] (sp_vision) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.368504] (sp_vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.379057] (sp_vision) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.399879] (-) TimerEvent: {}
+[0.408409] (sp_vision) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.409950] (sp_vision) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.458835] (sp_vision) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")\n'}
+[0.477973] (sp_vision) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include\n'}
+[0.500000] (-) TimerEvent: {}
+[0.504749] (sp_vision) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.509615] (sp_vision) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.549512] (sp_vision) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.550360] (sp_vision) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[0.594619] (sp_vision) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4")\n'}
+[0.600180] (-) TimerEvent: {}
+[0.603092] (sp_vision) StdoutLine: {'line': b'-- Found nlohmann_json: /usr/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.10.5")\n'}
+[0.632168] (sp_vision) StdoutLine: {'line': b'-- ROS2 environment found, compiling ROS2-related code.\n'}
+[0.700388] (-) TimerEvent: {}
+[0.800643] (-) TimerEvent: {}
+[0.893208] (sp_vision) StdoutLine: {'line': b'-- Found AMD headers in: /usr/include/suitesparse\n'}
+[0.894014] (sp_vision) StdoutLine: {'line': b'-- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so\n'}
+[0.894312] (sp_vision) StdoutLine: {'line': b'-- Found CAMD headers in: /usr/include/suitesparse\n'}
+[0.895094] (sp_vision) StdoutLine: {'line': b'-- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so\n'}
+[0.895285] (sp_vision) StdoutLine: {'line': b'-- Found CCOLAMD headers in: /usr/include/suitesparse\n'}
+[0.895876] (sp_vision) StdoutLine: {'line': b'-- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so\n'}
+[0.896102] (sp_vision) StdoutLine: {'line': b'-- Found CHOLMOD headers in: /usr/include/suitesparse\n'}
+[0.896700] (sp_vision) StdoutLine: {'line': b'-- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so\n'}
+[0.896936] (sp_vision) StdoutLine: {'line': b'-- Found COLAMD headers in: /usr/include/suitesparse\n'}
+[0.897514] (sp_vision) StdoutLine: {'line': b'-- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so\n'}
+[0.897737] (sp_vision) StdoutLine: {'line': b'-- Found SPQR headers in: /usr/include/suitesparse\n'}
+[0.898287] (sp_vision) StdoutLine: {'line': b'-- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so\n'}
+[0.898487] (sp_vision) StdoutLine: {'line': b'-- Found Config headers in: /usr/include/suitesparse\n'}
+[0.899060] (sp_vision) StdoutLine: {'line': b'-- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so\n'}
+[0.900484] (sp_vision) StdoutLine: {'line': b'-- Found Intel Thread Building Blocks (TBB) library (2021.5 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.\n'}
+[0.900536] (sp_vision) StdoutLine: {'line': b'-- Looking for shm_open in rt\n'}
+[0.900691] (-) TimerEvent: {}
+[0.936396] (sp_vision) StdoutLine: {'line': b'-- Looking for shm_open in rt - found\n'}
+[0.936506] (sp_vision) StdoutLine: {'line': b'-- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).\n'}
+[0.939960] (sp_vision) StdoutLine: {'line': b'-- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) \n'}
+[0.940700] (sp_vision) StdoutLine: {'line': b'-- Found SuiteSparse: /usr/include/suitesparse (found suitable version "5.10.1", minimum required is "5.10.1") found components: AMD CAMD CCOLAMD CHOLMOD COLAMD SPQR Config\n'}
+[0.942248] (sp_vision) StdoutLine: {'line': b'-- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake\n'}
+[0.945356] (sp_vision) StdoutLine: {'line': b'-- Found required Ceres dependency: glog\n'}
+[0.945668] (sp_vision) StdoutLine: {'line': b'-- Found required Ceres dependency: gflags\n'}
+[0.945901] (sp_vision) StdoutLine: {'line': b'-- Found Ceres version: 2.2.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations]\n'}
+[0.975150] (sp_vision) StdoutLine: {'line': b'-- ROS2 environment found (Humble), compiling ROS2-dependent executables.\n'}
+[0.975708] (sp_vision) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[1.000899] (-) TimerEvent: {}
+[1.101138] (-) TimerEvent: {}
+[1.113709] (sp_vision) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[1.144212] (sp_vision) StdoutLine: {'line': b'-- Build files have been written to: /home/rmsentry/DUST_Infantry_Vision/build/sp_vision\n'}
+[1.152925] (sp_vision) CommandEnded: {'returncode': 0}
+[1.153266] (sp_vision) JobProgress: {'identifier': 'sp_vision', 'progress': 'build'}
+[1.153798] (sp_vision) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision', '--', '-j12', '-l12'], 'cwd': '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'rmsentry'), ('SSH_CLIENT', '192.168.31.217 41116 22'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('GIT_ASKPASS', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/usr/local/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:'), ('BROWSER', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/rmsentry'), ('OLDPWD', '/home/rmsentry/DUST_Infantry_Vision'), ('TERM_PROGRAM_VERSION', '1.104.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-31f83827-37f8-4b1a-a573-3cd24ab90c68.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/rmsentry/DUST_Infantry_Vision/install:/home/rmsentry/DUST_Infantry_Vision/src/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rmsentry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/rmsentry/.vscode-server/cli/servers/Stable-0f0d87fa9e96c856c5212fc86db137ac0d783365/server/bin/remote-cli:/home/rmsentry/.local/bin:/opt/ros/humble/bin:/home/rmsentry/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LD_PRELOAD', '/usr/lib/x86_64-linux-gnu/libusb-1.0.so.0'), ('LANG', 'zh_CN.UTF-8'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-79bedd542a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision'), ('SSH_CONNECTION', '192.168.31.217 41116 192.168.31.155 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/local/lib/python3.10/dist-packages:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('MVCAM_SDK_VERSION', ''), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs:/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces:/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[1.172571] (sp_vision) StdoutLine: {'line': b'[  0%] \x1b[32mBuilding CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/admm.cpp.o\x1b[0m\n'}
+[1.173052] (sp_vision) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding CXX object io/serial/CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[1.173143] (sp_vision) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object io/serial/CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[1.173193] (sp_vision) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/tiny_api.cpp.o\x1b[0m\n'}
+[1.173246] (sp_vision) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/codegen.cpp.o\x1b[0m\n'}
+[1.173290] (sp_vision) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/exiter.cpp.o\x1b[0m\n'}
+[1.173335] (sp_vision) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/extended_kalman_filter.cpp.o\x1b[0m\n'}
+[1.173416] (sp_vision) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object io/serial/CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[1.173476] (sp_vision) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object tasks/auto_aim/planner/tinympc/CMakeFiles/tinympcstatic.dir/rho_benchmark.cpp.o\x1b[0m\n'}
+[1.173520] (sp_vision) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object tasks/omniperception/CMakeFiles/omniperception.dir/decider.cpp.o\x1b[0m\n'}
+[1.173563] (sp_vision) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/ransac_sine_fitter.cpp.o\x1b[0m\n'}
+[1.173630] (sp_vision) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object tasks/omniperception/CMakeFiles/omniperception.dir/perceptron.cpp.o\x1b[0m\n'}
+[1.203439] (-) TimerEvent: {}
+[1.303721] (-) TimerEvent: {}
+[1.371429] (sp_vision) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/img_tools.cpp.o\x1b[0m\n'}
+[1.403827] (-) TimerEvent: {}
+[1.504249] (-) TimerEvent: {}
+[1.604690] (-) TimerEvent: {}
+[1.705122] (-) TimerEvent: {}
+[1.805509] (-) TimerEvent: {}
+[1.905923] (-) TimerEvent: {}
+[2.008564] (-) TimerEvent: {}
+[2.068610] (sp_vision) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/math_tools.cpp.o\x1b[0m\n'}
+[2.086647] (sp_vision) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/plotter.cpp.o\x1b[0m\n'}
+[2.111442] (-) TimerEvent: {}
+[2.211884] (-) TimerEvent: {}
+[2.312268] (-) TimerEvent: {}
+[2.412673] (-) TimerEvent: {}
+[2.451922] (sp_vision) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[2.478337] (sp_vision) StdoutLine: {'line': b'[ 12%] Built target serial\n'}
+[2.482995] (sp_vision) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/trajectory.cpp.o\x1b[0m\n'}
+[2.508167] (sp_vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[KtinyVector project_soc(tinyVector, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.508673] (sp_vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.cpp:40:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen::placeholders::last\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.508994] (sp_vision) StderrLine: {'line': b'   40 |     tinytype u0 = s(Eigen::placeholders::\x1b[01;35m\x1b[Klast\x1b[m\x1b[K) * mu;\n'}
+[2.509279] (sp_vision) StderrLine: {'line': b'      |                                          \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.509569] (sp_vision) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Core:265\x1b[m\x1b[K,\n'}
+[2.509850] (sp_vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Dense:1\x1b[m\x1b[K,\n'}
+[2.512564] (sp_vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/eigen3/Eigen/Eigen:1\x1b[m\x1b[K,\n'}
+[2.512877] (-) TimerEvent: {}
+[2.513031] (sp_vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/types.hpp:3\x1b[m\x1b[K,\n'}
+[2.513328] (sp_vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.hpp:3\x1b[m\x1b[K,\n'}
+[2.513620] (sp_vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.cpp:3\x1b[m\x1b[K:\n'}
+[2.513889] (sp_vision) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:180:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[2.514156] (sp_vision) StderrLine: {'line': b'  180 |   EIGEN_DEPRECATED static const last_t \x1b[01;36m\x1b[Klast\x1b[m\x1b[K = Eigen::last;   // PLEASE use Eigen::last   instead of Eigen::placeholders::last\n'}
+[2.514435] (sp_vision) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.612992] (-) TimerEvent: {}
+[2.657070] (sp_vision) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/hikrobot/hikrobot.cpp.o\x1b[0m\n'}
+[2.713102] (-) TimerEvent: {}
+[2.813513] (-) TimerEvent: {}
+[2.900391] (sp_vision) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/mindvision/mindvision.cpp.o\x1b[0m\n'}
+[2.913617] (-) TimerEvent: {}
+[3.015681] (-) TimerEvent: {}
+[3.116078] (-) TimerEvent: {}
+[3.216441] (-) TimerEvent: {}
+[3.316864] (-) TimerEvent: {}
+[3.330835] (sp_vision) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/recorder.cpp.o\x1b[0m\n'}
+[3.416979] (-) TimerEvent: {}
+[3.518002] (-) TimerEvent: {}
+[3.618440] (-) TimerEvent: {}
+[3.638455] (sp_vision) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/usbcamera/usbcamera.cpp.o\x1b[0m\n'}
+[3.718543] (-) TimerEvent: {}
+[3.818838] (-) TimerEvent: {}
+[3.919149] (-) TimerEvent: {}
+[4.019443] (-) TimerEvent: {}
+[4.119748] (-) TimerEvent: {}
+[4.220055] (-) TimerEvent: {}
+[4.260494] (sp_vision) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/logger.cpp.o\x1b[0m\n'}
+[4.320160] (-) TimerEvent: {}
+[4.420620] (-) TimerEvent: {}
+[4.524437] (-) TimerEvent: {}
+[4.624857] (-) TimerEvent: {}
+[4.725287] (-) TimerEvent: {}
+[4.825724] (-) TimerEvent: {}
+[4.926344] (-) TimerEvent: {}
+[5.026752] (-) TimerEvent: {}
+[5.127208] (-) TimerEvent: {}
+[5.227638] (-) TimerEvent: {}
+[5.328031] (-) TimerEvent: {}
+[5.428420] (-) TimerEvent: {}
+[5.528845] (-) TimerEvent: {}
+[5.576709] (sp_vision) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/pid.cpp.o\x1b[0m\n'}
+[5.628949] (-) TimerEvent: {}
+[5.732585] (-) TimerEvent: {}
+[5.805648] (sp_vision) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/camera.cpp.o\x1b[0m\n'}
+[5.832691] (-) TimerEvent: {}
+[5.933105] (-) TimerEvent: {}
+[6.033539] (-) TimerEvent: {}
+[6.133942] (-) TimerEvent: {}
+[6.234354] (-) TimerEvent: {}
+[6.334789] (-) TimerEvent: {}
+[6.435175] (-) TimerEvent: {}
+[6.535586] (-) TimerEvent: {}
+[6.636035] (-) TimerEvent: {}
+[6.656436] (sp_vision) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/cboard.cpp.o\x1b[0m\n'}
+[6.739447] (-) TimerEvent: {}
+[6.839855] (-) TimerEvent: {}
+[6.940236] (-) TimerEvent: {}
+[7.040622] (-) TimerEvent: {}
+[7.140996] (-) TimerEvent: {}
+[7.241390] (-) TimerEvent: {}
+[7.341780] (-) TimerEvent: {}
+[7.442167] (-) TimerEvent: {}
+[7.542586] (-) TimerEvent: {}
+[7.643037] (-) TimerEvent: {}
+[7.743428] (-) TimerEvent: {}
+[7.843822] (-) TimerEvent: {}
+[7.944197] (-) TimerEvent: {}
+[8.047435] (-) TimerEvent: {}
+[8.147807] (-) TimerEvent: {}
+[8.248178] (-) TimerEvent: {}
+[8.348543] (-) TimerEvent: {}
+[8.448917] (-) TimerEvent: {}
+[8.549301] (-) TimerEvent: {}
+[8.649683] (-) TimerEvent: {}
+[8.750052] (-) TimerEvent: {}
+[8.850430] (-) TimerEvent: {}
+[8.950793] (-) TimerEvent: {}
+[9.051158] (-) TimerEvent: {}
+[9.151533] (-) TimerEvent: {}
+[9.255434] (-) TimerEvent: {}
+[9.355832] (-) TimerEvent: {}
+[9.456220] (-) TimerEvent: {}
+[9.556605] (-) TimerEvent: {}
+[9.656975] (-) TimerEvent: {}
+[9.757345] (-) TimerEvent: {}
+[9.857721] (-) TimerEvent: {}
+[9.958085] (-) TimerEvent: {}
+[10.058439] (-) TimerEvent: {}
+[10.158831] (-) TimerEvent: {}
+[10.259230] (-) TimerEvent: {}
+[10.359630] (-) TimerEvent: {}
+[10.460010] (-) TimerEvent: {}
+[10.560400] (-) TimerEvent: {}
+[10.661318] (-) TimerEvent: {}
+[10.762669] (-) TimerEvent: {}
+[10.863029] (-) TimerEvent: {}
+[10.963402] (-) TimerEvent: {}
+[11.063770] (-) TimerEvent: {}
+[11.164673] (-) TimerEvent: {}
+[11.265064] (-) TimerEvent: {}
+[11.301437] (sp_vision) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object tools/CMakeFiles/tools.dir/crc.cpp.o\x1b[0m\n'}
+[11.359248] (sp_vision) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/dm_imu/dm_imu.cpp.o\x1b[0m\n'}
+[11.365161] (-) TimerEvent: {}
+[11.465449] (-) TimerEvent: {}
+[11.565749] (-) TimerEvent: {}
+[11.666028] (-) TimerEvent: {}
+[11.673714] (sp_vision) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking CXX static library libtinympcstatic.a\x1b[0m\n'}
+[11.711767] (sp_vision) StdoutLine: {'line': b'[ 21%] Built target tinympcstatic\n'}
+[11.722148] (sp_vision) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/gimbal/gimbal.cpp.o\x1b[0m\n'}
+[11.766129] (-) TimerEvent: {}
+[11.866561] (-) TimerEvent: {}
+[11.876504] (sp_vision) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/ros2/publish2nav.cpp.o\x1b[0m\n'}
+[11.966669] (-) TimerEvent: {}
+[12.066969] (-) TimerEvent: {}
+[12.167362] (-) TimerEvent: {}
+[12.179464] (sp_vision) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object io/CMakeFiles/io.dir/ros2/ros2.cpp.o\x1b[0m\n'}
+[12.267440] (-) TimerEvent: {}
+[12.367805] (-) TimerEvent: {}
+[12.452490] (sp_vision) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/io/ros2/ros2.hpp:5\x1b[m\x1b[K,\n'}
+[12.452954] (sp_vision) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/io/ros2/ros2.cpp:1\x1b[m\x1b[K:\n'}
+[12.453041] (sp_vision) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rmsentry/DUST_Infantry_Vision/io/ros2/subscribe2nav.hpp:6:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksp_msgs/msg/detail/autoaim_target_msg__struct.hpp: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[12.453101] (sp_vision) StderrLine: {'line': b'    6 | #include \x1b[01;31m\x1b[K<sp_msgs/msg/detail/autoaim_target_msg__struct.hpp>\x1b[m\x1b[K\n'}
+[12.453155] (sp_vision) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.453207] (sp_vision) StderrLine: {'line': b'compilation terminated.\n'}
+[12.463769] (sp_vision) StderrLine: {'line': b'gmake[2]: *** [io/CMakeFiles/io.dir/build.make:188\xef\xbc\x9aio/CMakeFiles/io.dir/ros2/ros2.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[12.464424] (sp_vision) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[12.467899] (-) TimerEvent: {}
+[12.568241] (-) TimerEvent: {}
+[12.610070] (sp_vision) StdoutLine: {'line': b'[ 23%] Built target omniperception\n'}
+[12.668347] (-) TimerEvent: {}
+[12.768727] (-) TimerEvent: {}
+[12.868999] (-) TimerEvent: {}
+[12.969320] (-) TimerEvent: {}
+[13.069566] (-) TimerEvent: {}
+[13.170126] (-) TimerEvent: {}
+[13.270560] (-) TimerEvent: {}
+[13.370931] (-) TimerEvent: {}
+[13.471210] (-) TimerEvent: {}
+[13.571511] (-) TimerEvent: {}
+[13.671815] (-) TimerEvent: {}
+[13.772070] (-) TimerEvent: {}
+[13.872354] (-) TimerEvent: {}
+[13.972640] (-) TimerEvent: {}
+[14.072909] (-) TimerEvent: {}
+[14.173180] (-) TimerEvent: {}
+[14.273451] (-) TimerEvent: {}
+[14.373745] (-) TimerEvent: {}
+[14.474001] (-) TimerEvent: {}
+[14.574369] (-) TimerEvent: {}
+[14.674622] (-) TimerEvent: {}
+[14.774944] (-) TimerEvent: {}
+[14.875254] (-) TimerEvent: {}
+[14.975536] (-) TimerEvent: {}
+[15.075790] (-) TimerEvent: {}
+[15.176051] (-) TimerEvent: {}
+[15.276319] (-) TimerEvent: {}
+[15.376660] (-) TimerEvent: {}
+[15.476960] (-) TimerEvent: {}
+[15.577219] (-) TimerEvent: {}
+[15.677460] (-) TimerEvent: {}
+[15.777729] (-) TimerEvent: {}
+[15.877987] (-) TimerEvent: {}
+[15.978245] (-) TimerEvent: {}
+[16.078447] (-) TimerEvent: {}
+[16.178671] (-) TimerEvent: {}
+[16.278895] (-) TimerEvent: {}
+[16.379158] (-) TimerEvent: {}
+[16.479489] (-) TimerEvent: {}
+[16.579716] (-) TimerEvent: {}
+[16.679953] (-) TimerEvent: {}
+[16.780314] (-) TimerEvent: {}
+[16.880565] (-) TimerEvent: {}
+[16.980799] (-) TimerEvent: {}
+[17.081084] (-) TimerEvent: {}
+[17.181334] (-) TimerEvent: {}
+[17.281677] (-) TimerEvent: {}
+[17.382007] (-) TimerEvent: {}
+[17.482330] (-) TimerEvent: {}
+[17.582563] (-) TimerEvent: {}
+[17.682820] (-) TimerEvent: {}
+[17.783132] (-) TimerEvent: {}
+[17.883470] (-) TimerEvent: {}
+[17.983697] (-) TimerEvent: {}
+[18.083974] (-) TimerEvent: {}
+[18.184230] (-) TimerEvent: {}
+[18.284525] (-) TimerEvent: {}
+[18.384734] (-) TimerEvent: {}
+[18.484953] (-) TimerEvent: {}
+[18.585170] (-) TimerEvent: {}
+[18.685487] (-) TimerEvent: {}
+[18.785715] (-) TimerEvent: {}
+[18.885980] (-) TimerEvent: {}
+[18.986319] (-) TimerEvent: {}
+[19.086539] (-) TimerEvent: {}
+[19.186778] (-) TimerEvent: {}
+[19.287010] (-) TimerEvent: {}
+[19.374006] (sp_vision) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:1571\xef\xbc\x9aio/CMakeFiles/io.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[19.374140] (sp_vision) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[19.387122] (-) TimerEvent: {}
+[19.487317] (-) TimerEvent: {}
+[19.587558] (-) TimerEvent: {}
+[19.687791] (-) TimerEvent: {}
+[19.788043] (-) TimerEvent: {}
+[19.888365] (-) TimerEvent: {}
+[19.988592] (-) TimerEvent: {}
+[19.997024] (sp_vision) StdoutLine: {'line': b'[ 23%] Built target tools\n'}
+[19.997557] (sp_vision) StderrLine: {'line': b'gmake: *** [Makefile:101\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[19.998490] (sp_vision) CommandEnded: {'returncode': 2}
+[19.998753] (sp_vision) JobEnded: {'identifier': 'sp_vision', 'rc': 2}
+[20.008671] (-) EventReactorShutdown: {}

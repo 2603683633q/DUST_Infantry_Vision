@@ -1,0 +1,6 @@
+Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/sp_msgs -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs
+Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/sp_msgs -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs
+Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs -- -j12 -l12
+Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs -- -j12 -l12
+Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs
+Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs

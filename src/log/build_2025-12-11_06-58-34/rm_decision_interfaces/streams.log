@@ -1,0 +1,261 @@
+[0.016s] Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/rm_decision_interfaces -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces
+[0.085s] -- The C compiler identification is GNU 11.4.0
+[0.174s] -- The CXX compiler identification is GNU 11.4.0
+[0.202s] -- Detecting C compiler ABI info
+[0.315s] -- Detecting C compiler ABI info - done
+[0.355s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.355s] -- Detecting C compile features
+[0.355s] -- Detecting C compile features - done
+[0.360s] -- Detecting CXX compiler ABI info
+[0.509s] -- Detecting CXX compiler ABI info - done
+[0.534s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.534s] -- Detecting CXX compile features
+[0.535s] -- Detecting CXX compile features - done
+[0.539s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.732s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.843s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.846s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.852s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.906s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.959s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.989s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.525s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.147s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.945s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.947s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[2.948s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.948s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.948s]   the cmake_policy command to set the policy and suppress this warning.
+[2.948s] 
+[2.948s] Call Stack (most recent call first):
+[2.948s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.948s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.948s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[2.948s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.948s] [0m
+[2.974s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[2.977s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.977s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[2.978s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[2.978s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[2.978s]   the cmake_policy command to set the policy and suppress this warning.
+[2.978s] 
+[2.978s] Call Stack (most recent call first):
+[2.978s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[2.978s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[2.978s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[2.978s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[2.978s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.978s] [0m
+[3.002s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[3.002s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[3.002s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[3.002s]   the cmake_policy command to set the policy and suppress this warning.
+[3.002s] 
+[3.002s] Call Stack (most recent call first):
+[3.002s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[3.002s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[3.002s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[3.002s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[3.002s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.002s] [0m
+[3.012s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[3.012s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.012s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[3.012s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[3.045s] -- Found PythonExtra: .so
+[3.127s] -- Configuring done (3.1s)
+[3.161s] -- Generating done (0.0s)
+[3.174s] -- Build files have been written to: /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces
+[3.181s] Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/rm_decision_interfaces -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces
+[3.183s] Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces -- -j12 -l12
+[3.210s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.219s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.219s] [  6%] Built target ament_cmake_python_copy_rm_decision_interfaces
+[3.520s] running egg_info
+[3.521s] creating rm_decision_interfaces.egg-info
+[3.522s] writing rm_decision_interfaces.egg-info/PKG-INFO
+[3.524s] writing dependency_links to rm_decision_interfaces.egg-info/dependency_links.txt
+[3.524s] writing top-level names to rm_decision_interfaces.egg-info/top_level.txt
+[3.524s] writing manifest file 'rm_decision_interfaces.egg-info/SOURCES.txt'
+[3.527s] reading manifest file 'rm_decision_interfaces.egg-info/SOURCES.txt'
+[3.527s] writing manifest file 'rm_decision_interfaces.egg-info/SOURCES.txt'
+[3.565s] [  6%] Built target ament_cmake_python_build_rm_decision_interfaces_egg
+[3.576s] [  6%] Built target rm_decision_interfaces__cpp
+[3.587s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.594s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.594s] [ 19%] [32mBuilding C object CMakeFiles/rm_decision_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rm_decision_interfaces/msg/detail/refree__functions.c.o[0m
+[3.594s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.715s] [ 22%] [32m[1mLinking C shared library librm_decision_interfaces__rosidl_generator_c.so[0m
+[3.781s] [ 22%] Built target rm_decision_interfaces__rosidl_generator_c
+[3.806s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.807s] [ 29%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[3.807s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.038s] [ 35%] [32mBuilding CXX object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rm_decision_interfaces/msg/refree__type_support.cpp.o[0m
+[4.291s] [ 38%] [32mBuilding CXX object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rm_decision_interfaces/msg/detail/dds_fastrtps/refree__type_support.cpp.o[0m
+[4.311s] [ 41%] [32mBuilding CXX object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rm_decision_interfaces/msg/detail/refree__type_support.cpp.o[0m
+[4.525s] [ 45%] [32mBuilding C object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rm_decision_interfaces/msg/detail/refree__type_support.c.o[0m
+[4.525s] [ 48%] [32mBuilding CXX object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rm_decision_interfaces/msg/detail/refree__type_support_c.cpp.o[0m
+[4.606s] [ 51%] [32mBuilding CXX object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rm_decision_interfaces/msg/refree__type_support.cpp.o[0m
+[4.613s] [ 54%] [32m[1mLinking C shared library librm_decision_interfaces__rosidl_typesupport_introspection_c.so[0m
+[4.715s] [ 58%] [32m[1mLinking CXX shared library librm_decision_interfaces__rosidl_typesupport_c.so[0m
+[4.719s] [ 58%] Built target rm_decision_interfaces__rosidl_typesupport_introspection_c
+[4.809s] [ 61%] [32m[1mLinking CXX shared library librm_decision_interfaces__rosidl_typesupport_cpp.so[0m
+[4.820s] [ 61%] Built target rm_decision_interfaces__rosidl_typesupport_c
+[4.988s] [ 61%] Built target rm_decision_interfaces__rosidl_typesupport_cpp
+[5.089s] [ 64%] [32m[1mLinking CXX shared library librm_decision_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[5.471s] [ 64%] Built target rm_decision_interfaces__rosidl_typesupport_introspection_cpp
+[5.560s] [ 67%] [32m[1mLinking CXX shared library librm_decision_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[5.573s] [ 70%] [32m[1mLinking CXX shared library librm_decision_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.719s] [ 70%] Built target rm_decision_interfaces__rosidl_typesupport_fastrtps_cpp
+[5.742s] [ 70%] Built target rm_decision_interfaces__rosidl_typesupport_fastrtps_c
+[5.756s] [ 70%] Built target rm_decision_interfaces
+[5.812s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.845s] [ 74%] Built target rm_decision_interfaces__py
+[6.888s] [ 77%] [32mBuilding C object CMakeFiles/rm_decision_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rm_decision_interfaces/msg/_refree_s.c.o[0m
+[7.153s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/rm_decision_interfaces/librm_decision_interfaces__rosidl_generator_py.so[0m
+[7.243s] [ 80%] Built target rm_decision_interfaces__rosidl_generator_py
+[7.274s] [ 83%] [32mBuilding C object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rm_decision_interfaces/_rm_decision_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.457s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.527s] [ 87%] Built target rm_decision_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[7.557s] [ 90%] [32mBuilding C object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rm_decision_interfaces/_rm_decision_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[7.776s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.823s] [ 93%] Built target rm_decision_interfaces__rosidl_typesupport_c__pyext
+[7.851s] [ 96%] [32mBuilding C object CMakeFiles/rm_decision_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rm_decision_interfaces/_rm_decision_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.000s] [100%] [32m[1mLinking C shared library rosidl_generator_py/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[8.097s] [100%] Built target rm_decision_interfaces__rosidl_typesupport_introspection_c__pyext
+[8.113s] Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces -- -j12 -l12
+[8.124s] Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces
+[8.128s] -- Install configuration: ""
+[8.128s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/ament_index/resource_index/rosidl_interfaces/rm_decision_interfaces
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/rosidl_generator_c__visibility_control.h
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__functions.c
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__type_support.h
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__functions.h
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__struct.h
+[8.129s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/refree.h
+[8.131s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/library_path.sh
+[8.131s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/library_path.dsv
+[8.132s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_generator_c.so
+[8.132s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_generator_c.so" to ""
+[8.132s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces
+[8.132s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg
+[8.132s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.132s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail
+[8.133s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__rosidl_typesupport_fastrtps_c.h
+[8.133s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_fastrtps_c.so
+[8.133s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[8.133s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces
+[8.133s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg
+[8.134s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.134s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail
+[8.134s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__rosidl_typesupport_introspection_c.h
+[8.134s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__type_support.c
+[8.139s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_introspection_c.so
+[8.139s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[8.139s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_c.so
+[8.139s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_c.so" to ""
+[8.139s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces
+[8.140s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg
+[8.140s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/refree.hpp
+[8.140s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail
+[8.142s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__type_support.hpp
+[8.142s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__traits.hpp
+[8.142s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__builder.hpp
+[8.142s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__struct.hpp
+[8.142s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[8.142s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces
+[8.142s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg
+[8.142s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.142s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/dds_fastrtps
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__rosidl_typesupport_fastrtps_cpp.hpp
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[8.143s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.143s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces
+[8.143s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg
+[8.143s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__type_support.cpp
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/include/rm_decision_interfaces/rm_decision_interfaces/msg/detail/refree__rosidl_typesupport_introspection_cpp.hpp
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_introspection_cpp.so
+[8.143s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_cpp.so
+[8.143s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_typesupport_cpp.so" to ""
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/pythonpath.sh
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/pythonpath.dsv
+[8.143s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces-0.0.0-py3.10.egg-info
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/msg
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/msg/_refree_s.c
+[8.144s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/msg/__init__.py
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/msg/_refree.py
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/_rm_decision_interfaces_s.ep.rosidl_typesupport_c.c
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/librm_decision_interfaces__rosidl_generator_py.so
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/_rm_decision_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/_rm_decision_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/__init__.py
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.145s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.242s] Listing '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces'...
+[8.242s] Compiling '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/__init__.py'...
+[8.242s] Listing '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/msg'...
+[8.242s] Compiling '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/msg/__init__.py'...
+[8.242s] Compiling '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/msg/_refree.py'...
+[8.253s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.253s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.253s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.254s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.254s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.254s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/local/lib/python3.10/dist-packages/rm_decision_interfaces/rm_decision_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_generator_py.so
+[8.255s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/librm_decision_interfaces__rosidl_generator_py.so" to ""
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/msg/Refree.idl
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/msg/Refree.msg
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/ament_index/resource_index/package_run_dependencies/rm_decision_interfaces
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/ament_index/resource_index/parent_prefix_path/rm_decision_interfaces
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/ament_prefix_path.sh
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/ament_prefix_path.dsv
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/path.sh
+[8.255s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/environment/path.dsv
+[8.256s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/local_setup.bash
+[8.256s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/local_setup.sh
+[8.256s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/local_setup.zsh
+[8.256s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/local_setup.dsv
+[8.256s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.dsv
+[8.256s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/ament_index/resource_index/packages/rm_decision_interfaces
+[8.256s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_generator_cExport.cmake
+[8.257s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_generator_cExport-noconfig.cmake
+[8.257s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[8.257s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.257s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[8.257s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.257s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_cExport.cmake
+[8.257s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[8.258s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_generator_cppExport.cmake
+[8.258s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.258s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.258s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[8.258s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.258s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_cppExport.cmake
+[8.258s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[8.259s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_generator_pyExport.cmake
+[8.259s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/export_rm_decision_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[8.259s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rosidl_cmake-extras.cmake
+[8.261s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.261s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.261s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[8.262s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[8.262s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.262s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.262s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfacesConfig.cmake
+[8.262s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/cmake/rm_decision_interfacesConfig-version.cmake
+[8.262s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.xml
+[8.265s] Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces

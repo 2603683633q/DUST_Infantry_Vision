@@ -8,22 +8,25 @@
 
 namespace io
 {
-Camera::Camera(const std::string & config_path)
+Camera::Camera(const std::string & config_path, int device_index)
 {
   auto yaml = tools::load(config_path);
   auto camera_name = tools::read<std::string>(yaml, "camera_name");
   auto exposure_ms = tools::read<double>(yaml, "exposure_ms");
 
+  // 根据 device_index 选择不同的配置键名
+  std::string vid_pid_key = (device_index == 0) ? "vid_pid" : "vid_pid_" + std::to_string(device_index);
+
   if (camera_name == "mindvision") {
     auto gamma = tools::read<double>(yaml, "gamma");
-    auto vid_pid = tools::read<std::string>(yaml, "vid_pid");
+    auto vid_pid = tools::read<std::string>(yaml, vid_pid_key);
     camera_ = std::make_unique<MindVision>(exposure_ms, gamma, vid_pid);
   }
 
   else if (camera_name == "hikrobot") {
     auto gain = tools::read<double>(yaml, "gain");
-    auto vid_pid = tools::read<std::string>(yaml, "vid_pid");
-    camera_ = std::make_unique<HikRobot>(exposure_ms, gain, vid_pid);
+    auto vid_pid = tools::read<std::string>(yaml, vid_pid_key);
+    camera_ = std::make_unique<HikRobot>(exposure_ms, gain, vid_pid, device_index);
   }
 
   else {

@@ -1,0 +1,24 @@
+[01m[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.cpp:[m[K In function ‘[01m[KtinyVector project_soc(tinyVector, float)[m[K’:
+[01m[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.cpp:40:42:[m[K [01;35m[Kwarning: [m[K‘[01m[KEigen::placeholders::last[m[K’ is deprecated [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+   40 |     tinytype u0 = s(Eigen::placeholders::[01;35m[Klast[m[K) * mu;
+      |                                          [01;35m[K^~~~[m[K
+In file included from [01m[K/usr/include/eigen3/Eigen/Core:265[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Dense:1[m[K,
+                 from [01m[K/usr/include/eigen3/Eigen/Eigen:1[m[K,
+                 from [01m[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/types.hpp:3[m[K,
+                 from [01m[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.hpp:3[m[K,
+                 from [01m[K/home/rmsentry/DUST_Infantry_Vision/tasks/auto_aim/planner/tinympc/admm.cpp:3[m[K:
+[01m[K/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:180:40:[m[K [01;36m[Knote: [m[Kdeclared here
+  180 |   EIGEN_DEPRECATED static const last_t [01;36m[Klast[m[K = Eigen::last;   // PLEASE use Eigen::last   instead of Eigen::placeholders::last
+      |                                        [01;36m[K^~~~[m[K
+In file included from [01m[K/home/rmsentry/DUST_Infantry_Vision/io/ros2/ros2.hpp:5[m[K,
+                 from [01m[K/home/rmsentry/DUST_Infantry_Vision/io/ros2/ros2.cpp:1[m[K:
+[01m[K/home/rmsentry/DUST_Infantry_Vision/io/ros2/subscribe2nav.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Ksp_msgs/msg/detail/autoaim_target_msg__struct.hpp: 没有那个文件或目录
+    6 | #include [01;31m[K<sp_msgs/msg/detail/autoaim_target_msg__struct.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [io/CMakeFiles/io.dir/build.make:188：io/CMakeFiles/io.dir/ros2/ros2.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[1]: *** [CMakeFiles/Makefile2:1571：io/CMakeFiles/io.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake: *** [Makefile:101：all] 错误 2

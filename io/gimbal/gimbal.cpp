@@ -197,8 +197,8 @@ void Gimbal::read_thread()
     float pitch_deg = rx_data_.pitch;
     float yaw_rad = yaw_deg * static_cast<float>(M_PI / 180.0);
     float pitch_rad = pitch_deg * static_cast<float>(M_PI / 180.0);
-    tools::logger()->info(
-      "[Gimbal] Yaw: {} deg, {} rad | Pitch: {} deg, {} rad", yaw_deg, yaw_rad, pitch_deg, pitch_rad);
+    // tools::logger()->info(
+    //   "[Gimbal] Yaw: {} deg, {} rad | Pitch: {} deg, {} rad", yaw_deg, yaw_rad, pitch_deg, pitch_rad);
 
     std::lock_guard<std::mutex> lock(mutex_);
 

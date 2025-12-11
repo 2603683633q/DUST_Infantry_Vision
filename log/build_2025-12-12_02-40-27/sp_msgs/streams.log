@@ -1,0 +1,290 @@
+[0.007s] Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/sp_msgs -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs
+[0.062s] -- The C compiler identification is GNU 11.4.0
+[0.101s] -- The CXX compiler identification is GNU 11.4.0
+[0.109s] -- Detecting C compiler ABI info
+[0.151s] -- Detecting C compiler ABI info - done
+[0.161s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.162s] -- Detecting C compile features
+[0.162s] -- Detecting C compile features - done
+[0.164s] -- Detecting CXX compiler ABI info
+[0.212s] -- Detecting CXX compiler ABI info - done
+[0.223s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.223s] -- Detecting CXX compile features
+[0.223s] -- Detecting CXX compile features - done
+[0.225s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.314s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.374s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.376s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.380s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.408s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.433s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.454s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.769s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.098s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.525s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.527s] [33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[1.527s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.527s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.527s]   the cmake_policy command to set the policy and suppress this warning.
+[1.527s] 
+[1.527s] Call Stack (most recent call first):
+[1.527s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.527s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.527s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.527s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.527s] [0m
+[1.542s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[1.543s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.544s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[1.544s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.544s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.544s]   the cmake_policy command to set the policy and suppress this warning.
+[1.544s] 
+[1.544s] Call Stack (most recent call first):
+[1.544s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.544s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.544s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.544s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.544s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.544s] [0m
+[1.557s] [33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[1.557s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[1.558s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[1.558s]   the cmake_policy command to set the policy and suppress this warning.
+[1.558s] 
+[1.558s] Call Stack (most recent call first):
+[1.558s]   /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[1.558s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[1.558s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[1.558s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.558s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.558s] [0m
+[1.562s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[1.562s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.562s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.562s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.577s] -- Found PythonExtra: .so
+[1.626s] -- Configuring done (1.6s)
+[1.650s] -- Generating done (0.0s)
+[1.657s] -- Build files have been written to: /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs
+[1.662s] Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/sp_msgs -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs
+[1.663s] Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs -- -j12 -l12
+[1.677s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.681s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.683s] [  5%] Built target ament_cmake_python_copy_sp_msgs
+[1.827s] running egg_info
+[1.828s] creating sp_msgs.egg-info
+[1.828s] writing sp_msgs.egg-info/PKG-INFO
+[1.828s] writing dependency_links to sp_msgs.egg-info/dependency_links.txt
+[1.828s] writing top-level names to sp_msgs.egg-info/top_level.txt
+[1.828s] writing manifest file 'sp_msgs.egg-info/SOURCES.txt'
+[1.830s] reading manifest file 'sp_msgs.egg-info/SOURCES.txt'
+[1.830s] writing manifest file 'sp_msgs.egg-info/SOURCES.txt'
+[1.846s] [  5%] Built target ament_cmake_python_build_sp_msgs_egg
+[1.857s] [  5%] Built target sp_msgs__cpp
+[1.861s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.862s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.862s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.871s] [ 15%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_generator_c.dir/rosidl_generator_c/sp_msgs/msg/detail/enemy_status_msg__functions.c.o[0m
+[1.871s] [ 17%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_generator_c.dir/rosidl_generator_c/sp_msgs/msg/detail/autoaim_target_msg__functions.c.o[0m
+[1.909s] [ 20%] [32m[1mLinking C shared library libsp_msgs__rosidl_generator_c.so[0m
+[1.928s] [ 20%] Built target sp_msgs__rosidl_generator_c
+[1.932s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.933s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.933s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.031s] [ 30%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sp_msgs/msg/enemy_status_msg__type_support.cpp.o[0m
+[2.031s] [ 33%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/sp_msgs/msg/autoaim_target_msg__type_support.cpp.o[0m
+[2.051s] [ 38%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sp_msgs/msg/detail/autoaim_target_msg__type_support.cpp.o[0m
+[2.051s] [ 38%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/sp_msgs/msg/detail/enemy_status_msg__type_support.cpp.o[0m
+[2.074s] [ 41%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sp_msgs/msg/detail/dds_fastrtps/enemy_status_msg__type_support.cpp.o[0m
+[2.074s] [ 43%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/sp_msgs/msg/detail/dds_fastrtps/autoaim_target_msg__type_support.cpp.o[0m
+[2.138s] [ 48%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/sp_msgs/msg/autoaim_target_msg__type_support.cpp.o[0m
+[2.138s] [ 48%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/sp_msgs/msg/enemy_status_msg__type_support.cpp.o[0m
+[2.174s] [ 51%] [32m[1mLinking CXX shared library libsp_msgs__rosidl_typesupport_c.so[0m
+[2.198s] [ 53%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sp_msgs/msg/detail/autoaim_target_msg__type_support.c.o[0m
+[2.199s] [ 56%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/sp_msgs/msg/detail/enemy_status_msg__type_support.c.o[0m
+[2.217s] [ 56%] Built target sp_msgs__rosidl_typesupport_c
+[2.245s] [ 58%] [32m[1mLinking C shared library libsp_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.248s] [ 61%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sp_msgs/msg/detail/enemy_status_msg__type_support_c.cpp.o[0m
+[2.248s] [ 64%] [32mBuilding CXX object CMakeFiles/sp_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/sp_msgs/msg/detail/autoaim_target_msg__type_support_c.cpp.o[0m
+[2.268s] [ 64%] Built target sp_msgs__rosidl_typesupport_introspection_c
+[2.292s] [ 66%] [32m[1mLinking CXX shared library libsp_msgs__rosidl_typesupport_cpp.so[0m
+[2.328s] [ 66%] Built target sp_msgs__rosidl_typesupport_cpp
+[2.434s] [ 69%] [32m[1mLinking CXX shared library libsp_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.464s] [ 71%] [32m[1mLinking CXX shared library libsp_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.478s] [ 71%] Built target sp_msgs__rosidl_typesupport_fastrtps_cpp
+[2.510s] [ 71%] Built target sp_msgs__rosidl_typesupport_introspection_cpp
+[2.515s] [ 74%] [32m[1mLinking CXX shared library libsp_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.556s] [ 74%] Built target sp_msgs__rosidl_typesupport_fastrtps_c
+[2.563s] [ 74%] Built target sp_msgs
+[2.571s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.800s] [ 76%] Built target sp_msgs__py
+[2.806s] [ 79%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_generator_py.dir/rosidl_generator_py/sp_msgs/msg/_enemy_status_msg_s.c.o[0m
+[2.807s] [ 82%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_generator_py.dir/rosidl_generator_py/sp_msgs/msg/_autoaim_target_msg_s.c.o[0m
+[2.882s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/sp_msgs/libsp_msgs__rosidl_generator_py.so[0m
+[2.905s] [ 84%] Built target sp_msgs__rosidl_generator_py
+[2.915s] [ 87%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/sp_msgs/_sp_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[2.915s] [ 89%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/sp_msgs/_sp_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.915s] [ 92%] [32mBuilding C object CMakeFiles/sp_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/sp_msgs/_sp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.975s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/sp_msgs/sp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.975s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/sp_msgs/sp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.975s] [100%] [32m[1mLinking C shared library rosidl_generator_py/sp_msgs/sp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.994s] [100%] Built target sp_msgs__rosidl_typesupport_c__pyext
+[2.994s] [100%] Built target sp_msgs__rosidl_typesupport_introspection_c__pyext
+[2.995s] [100%] Built target sp_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.999s] Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs -- -j12 -l12
+[3.002s] Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs
+[3.005s] -- Install configuration: ""
+[3.005s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/ament_index/resource_index/rosidl_interfaces/sp_msgs
+[3.005s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs
+[3.005s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg
+[3.005s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.005s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/enemy_status_msg.h
+[3.005s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__struct.h
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__functions.h
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__struct.h
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__type_support.h
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__type_support.h
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__functions.c
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__functions.c
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__functions.h
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/autoaim_target_msg.h
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/library_path.sh
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/library_path.dsv
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_generator_c.so
+[3.006s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_generator_c.so" to ""
+[3.006s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs
+[3.006s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg
+[3.006s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.007s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__rosidl_typesupport_fastrtps_c.h
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__rosidl_typesupport_fastrtps_c.h
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_fastrtps_c.so
+[3.007s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[3.007s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs
+[3.007s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.007s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__rosidl_typesupport_introspection_c.h
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__type_support.c
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__type_support.c
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__rosidl_typesupport_introspection_c.h
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_introspection_c.so
+[3.007s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_introspection_c.so" to ""
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_c.so
+[3.007s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_c.so" to ""
+[3.007s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs
+[3.007s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg
+[3.007s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/enemy_status_msg.hpp
+[3.008s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__struct.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__traits.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__traits.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__builder.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__type_support.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__type_support.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__struct.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__builder.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/autoaim_target_msg.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.008s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs
+[3.008s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.008s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/dds_fastrtps
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__rosidl_typesupport_fastrtps_cpp.hpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.008s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.008s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs
+[3.008s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg
+[3.008s] -- Up-to-date: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__type_support.cpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__type_support.cpp
+[3.008s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/autoaim_target_msg__rosidl_typesupport_introspection_cpp.hpp
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/include/sp_msgs/sp_msgs/msg/detail/enemy_status_msg__rosidl_typesupport_introspection_cpp.hpp
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_introspection_cpp.so
+[3.009s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_cpp.so
+[3.009s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_typesupport_cpp.so" to ""
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/pythonpath.sh
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/pythonpath.dsv
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs-0.0.0-py3.10.egg-info
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/_enemy_status_msg_s.c
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/_enemy_status_msg.py
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/_autoaim_target_msg_s.c
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/__init__.py
+[3.009s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/_autoaim_target_msg.py
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/libsp_msgs__rosidl_generator_py.so
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/_sp_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/__init__.py
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/_sp_msgs_s.ep.rosidl_typesupport_c.c
+[3.010s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/_sp_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.035s] Listing '/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs'...
+[3.035s] Compiling '/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/__init__.py'...
+[3.035s] Listing '/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg'...
+[3.035s] Compiling '/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/__init__.py'...
+[3.035s] Compiling '/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/_autoaim_target_msg.py'...
+[3.035s] Compiling '/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/msg/_enemy_status_msg.py'...
+[3.038s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.039s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.039s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.039s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.039s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.039s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/local/lib/python3.10/dist-packages/sp_msgs/sp_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.039s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_generator_py.so
+[3.039s] -- Set non-toolchain portion of runtime path of "/home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/lib/libsp_msgs__rosidl_generator_py.so" to ""
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/msg/EnemyStatusMsg.idl
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/msg/AutoaimTargetMsg.idl
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/msg/EnemyStatusMsg.msg
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/msg/AutoaimTargetMsg.msg
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/ament_index/resource_index/package_run_dependencies/sp_msgs
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/ament_index/resource_index/parent_prefix_path/sp_msgs
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/ament_prefix_path.sh
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/ament_prefix_path.dsv
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/path.sh
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/environment/path.dsv
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/local_setup.bash
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/local_setup.sh
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/local_setup.zsh
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/local_setup.dsv
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/package.dsv
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/ament_index/resource_index/packages/sp_msgs
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_generator_cExport.cmake
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.040s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_cExport.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_generator_cppExport.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_cppExport.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_generator_pyExport.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/export_sp_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/rosidl_cmake-extras.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.041s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgsConfig.cmake
+[3.042s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/cmake/sp_msgsConfig-version.cmake
+[3.042s] -- Installing: /home/rmsentry/DUST_Infantry_Vision/install/sp_msgs/share/sp_msgs/package.xml
+[3.043s] Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/build/sp_msgs

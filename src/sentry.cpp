@@ -46,8 +46,8 @@ int main(int argc, char * argv[])
   io::CBoard cboard(config_path);
   io::Camera camera(config_path);
   io::Camera back_camera("configs/camera.yaml");
-  io::USBCamera usbcam1("video0", config_path);
-  io::USBCamera usbcam2("video2", config_path);
+  // io::USBCamera usbcam1("video0", config_path);
+  // io::USBCamera usbcam2("video2", config_path);
 
   auto_aim::YOLO yolo(config_path, false);
   auto_aim::Solver solver(config_path);
@@ -88,7 +88,7 @@ int main(int argc, char * argv[])
 
     /// 全向感知逻辑
     if (tracker.state() == "lost")
-      command = decider.decide(yolo, gimbal_pos, usbcam1, usbcam2, back_camera);
+      command = decider.decide(yolo, gimbal_pos, back_camera);
     else
       command = aimer.aim(targets, timestamp, cboard.bullet_speed, cboard.shoot_mode, solver.R_gimbal2world());
 

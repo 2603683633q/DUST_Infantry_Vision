@@ -6,10 +6,10 @@
 #include <thread>
 
 #include "io/camera.hpp"
-#include "io/cboard.hpp"
+#include "io/gimbal/gimbal.hpp"
+#include "io/cboard.hpp"  // for ShootMode enum
 #include "io/ros2/publish2nav.hpp"
 #include "io/ros2/ros2.hpp"
-#include "io/usbcamera/usbcamera.hpp"
 #include "tasks/auto_aim/aimer.hpp"
 #include "tasks/auto_aim/shooter.hpp"
 #include "tasks/auto_aim/solver.hpp"
@@ -43,9 +43,8 @@ int main(int argc, char * argv[])
   auto config_path = cli.get<std::string>(0);
 
   io::ROS2 ros2;
-  io::CBoard cboard(config_path);
+  io::Gimbal gimbal(config_path);
   io::Camera camera(config_path);
-  io::Camera back_camera("configs/camera.yaml");
 
   auto_aim::YOLO yolo(config_path, false);
   auto_aim::Solver solver(config_path);
@@ -62,7 +61,7 @@ int main(int argc, char * argv[])
 
   while (!exiter.exit()) {
     camera.read(img, timestamp);
-    Eigen::Quaterniond q = cboard.imu_at(timestamp - 1ms);
+    Eigen::Quaterniond q = gimbal.q(timestamp - 1ms);
     // recorder.record(img, q, timestamp);
 
     /// 自瞄核心逻辑
@@ -86,14 +85,14 @@ int main(int argc, char * argv[])
 
     /// 全向感知逻辑
     if (tracker.state() == "lost")
-      command = decider.decide(yolo, gimbal_pos, back_camera);
+      command = decider.decide(yolo, gimbal_pos, camera);
     else
-      command = aimer.aim(targets, timestamp, cboard.bullet_speed, cboard.shoot_mode, solver.R_gimbal2world());
+      command = aimer.aim(targets, timestamp, gimbal.state().bullet_speed, io::ShootMode::both_shoot, solver.R_gimbal2world());
 
     /// 发射逻辑
     command.shoot = shooter.shoot(command, aimer, targets, gimbal_pos);
 
-    cboard.send(command);
+    gimbal.send(command.control, command.shoot, command.yaw, 0, 0, command.pitch, 0, 0);
 
     /// ROS2通信
     Eigen::Vector4d target_info = decider.get_target_info(armors, targets);

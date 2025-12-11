@@ -18,7 +18,7 @@ public:
 class Camera
 {
 public:
-  Camera(const std::string & config_path);
+  Camera(const std::string & config_path, int device_index = 0);
   void read(cv::Mat & img, std::chrono::steady_clock::time_point & timestamp);
 
 private:

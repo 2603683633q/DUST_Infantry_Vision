@@ -1,0 +1,284 @@
+[0.142s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.142s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x726517580be0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x726517543e20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x726517543e20>>)
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.370s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.370s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rmsentry/DUST_Infantry_Vision/src'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extension 'ignore_ament_install'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extensions ['colcon_pkg']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extension 'colcon_pkg'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extensions ['colcon_meta']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extension 'colcon_meta'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extensions ['ros']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(auto_aim_interfaces) by extension 'ros'
+[0.391s] DEBUG:colcon.colcon_core.package_identification:Package 'auto_aim_interfaces' with type 'ros.ament_cmake' and name 'auto_aim_interfaces'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extension 'ignore'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extension 'ignore_ament_install'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extensions ['colcon_pkg']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extension 'colcon_pkg'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extensions ['colcon_meta']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extension 'colcon_meta'
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extensions ['ros']
+[0.392s] Level 1:colcon.colcon_core.package_identification:_identify(rm_decision_interfaces) by extension 'ros'
+[0.393s] DEBUG:colcon.colcon_core.package_identification:Package 'rm_decision_interfaces' with type 'ros.ament_cmake' and name 'rm_decision_interfaces'
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.393s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extension 'ignore'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extension 'ignore_ament_install'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extensions ['colcon_pkg']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extension 'colcon_pkg'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extensions ['colcon_meta']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extension 'colcon_meta'
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extensions ['ros']
+[0.394s] Level 1:colcon.colcon_core.package_identification:_identify(sp_msgs) by extension 'ros'
+[0.395s] DEBUG:colcon.colcon_core.package_identification:Package 'sp_msgs' with type 'ros.ament_cmake' and name 'sp_msgs'
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.436s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 342 installed packages in /opt/ros/humble
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.494s] Level 5:colcon.colcon_core.verb:set package 'auto_aim_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.494s] DEBUG:colcon.colcon_core.verb:Building package 'auto_aim_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces', 'merge_install': False, 'path': '/home/rmsentry/DUST_Infantry_Vision/src/auto_aim_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'rm_decision_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.495s] DEBUG:colcon.colcon_core.verb:Building package 'rm_decision_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces', 'merge_install': False, 'path': '/home/rmsentry/DUST_Infantry_Vision/src/rm_decision_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'cmake_args' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'cmake_target' from command line to 'None'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.495s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.496s] Level 5:colcon.colcon_core.verb:set package 'sp_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.496s] DEBUG:colcon.colcon_core.verb:Building package 'sp_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs', 'merge_install': False, 'path': '/home/rmsentry/DUST_Infantry_Vision/src/sp_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.496s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.497s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.497s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rmsentry/DUST_Infantry_Vision/src/auto_aim_interfaces' with build type 'ament_cmake'
+[0.497s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rmsentry/DUST_Infantry_Vision/src/auto_aim_interfaces'
+[0.500s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.500s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.500s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.505s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rmsentry/DUST_Infantry_Vision/src/rm_decision_interfaces' with build type 'ament_cmake'
+[0.506s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rmsentry/DUST_Infantry_Vision/src/rm_decision_interfaces'
+[0.506s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.506s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.509s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rmsentry/DUST_Infantry_Vision/src/sp_msgs' with build type 'ament_cmake'
+[0.510s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rmsentry/DUST_Infantry_Vision/src/sp_msgs'
+[0.510s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.510s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/auto_aim_interfaces -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces
+[0.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/rm_decision_interfaces -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces
+[0.534s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/sp_msgs -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs
+[3.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/rm_decision_interfaces -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces
+[3.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces -- -j12 -l12
+[3.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/auto_aim_interfaces -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces
+[3.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces -- -j12 -l12
+[3.977s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision/src/sp_msgs -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs
+[3.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs -- -j12 -l12
+[8.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces -- -j12 -l12
+[8.630s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces
+[8.770s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_decision_interfaces)
+[8.771s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/rm_decision_interfaces
+[8.773s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces' for CMake module files
+[8.777s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces' for CMake config files
+[8.778s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_decision_interfaces', 'cmake_prefix_path')
+[8.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/cmake_prefix_path.ps1'
+[8.779s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/cmake_prefix_path.dsv'
+[8.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/cmake_prefix_path.sh'
+[8.782s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib'
+[8.782s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_decision_interfaces', 'ld_library_path_lib')
+[8.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/ld_library_path_lib.ps1'
+[8.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/ld_library_path_lib.dsv'
+[8.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/ld_library_path_lib.sh'
+[8.783s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/bin'
+[8.783s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/pkgconfig/rm_decision_interfaces.pc'
+[8.784s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/python3.10/site-packages'
+[8.784s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/bin'
+[8.788s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.ps1'
+[8.789s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.dsv'
+[8.789s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.sh'
+[8.790s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.bash'
+[8.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.zsh'
+[8.792s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/colcon-core/packages/rm_decision_interfaces)
+[8.793s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rm_decision_interfaces)
+[8.793s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces' for CMake module files
+[8.794s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces' for CMake config files
+[8.795s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_decision_interfaces', 'cmake_prefix_path')
+[8.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/cmake_prefix_path.ps1'
+[8.798s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/cmake_prefix_path.dsv'
+[8.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/cmake_prefix_path.sh'
+[8.800s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib'
+[8.800s] Level 1:colcon.colcon_core.shell:create_environment_hook('rm_decision_interfaces', 'ld_library_path_lib')
+[8.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/ld_library_path_lib.ps1'
+[8.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/ld_library_path_lib.dsv'
+[8.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/hook/ld_library_path_lib.sh'
+[8.802s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/bin'
+[8.802s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/pkgconfig/rm_decision_interfaces.pc'
+[8.802s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/lib/python3.10/site-packages'
+[8.802s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/bin'
+[8.803s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.ps1'
+[8.803s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.dsv'
+[8.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.sh'
+[8.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.bash'
+[8.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/rm_decision_interfaces/package.zsh'
+[8.806s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmsentry/DUST_Infantry_Vision/src/install/rm_decision_interfaces/share/colcon-core/packages/rm_decision_interfaces)
+[10.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs -- -j12 -l12
+[10.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs
+[10.178s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sp_msgs)
+[10.178s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs' for CMake module files
+[10.179s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs' for CMake config files
+[10.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('sp_msgs', 'cmake_prefix_path')
+[10.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/cmake_prefix_path.ps1'
+[10.180s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/cmake_prefix_path.dsv'
+[10.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/cmake_prefix_path.sh'
+[10.181s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib'
+[10.182s] Level 1:colcon.colcon_core.shell:create_environment_hook('sp_msgs', 'ld_library_path_lib')
+[10.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/ld_library_path_lib.ps1'
+[10.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/ld_library_path_lib.dsv'
+[10.185s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/sp_msgs
+[10.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/ld_library_path_lib.sh'
+[10.185s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/bin'
+[10.186s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib/pkgconfig/sp_msgs.pc'
+[10.186s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib/python3.10/site-packages'
+[10.186s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/bin'
+[10.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.ps1'
+[10.187s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.dsv'
+[10.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.sh'
+[10.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.bash'
+[10.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.zsh'
+[10.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/colcon-core/packages/sp_msgs)
+[10.190s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sp_msgs)
+[10.190s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs' for CMake module files
+[10.191s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs' for CMake config files
+[10.191s] Level 1:colcon.colcon_core.shell:create_environment_hook('sp_msgs', 'cmake_prefix_path')
+[10.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/cmake_prefix_path.ps1'
+[10.195s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/cmake_prefix_path.dsv'
+[10.195s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/cmake_prefix_path.sh'
+[10.196s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib'
+[10.196s] Level 1:colcon.colcon_core.shell:create_environment_hook('sp_msgs', 'ld_library_path_lib')
+[10.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/ld_library_path_lib.ps1'
+[10.197s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/ld_library_path_lib.dsv'
+[10.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/hook/ld_library_path_lib.sh'
+[10.198s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/bin'
+[10.198s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib/pkgconfig/sp_msgs.pc'
+[10.198s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/lib/python3.10/site-packages'
+[10.199s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/bin'
+[10.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.ps1'
+[10.200s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.dsv'
+[10.200s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.sh'
+[10.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.bash'
+[10.201s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/sp_msgs/package.zsh'
+[10.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmsentry/DUST_Infantry_Vision/src/install/sp_msgs/share/colcon-core/packages/sp_msgs)
+[12.175s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces -- -j12 -l12
+[12.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces
+[12.259s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auto_aim_interfaces)
+[12.260s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces' for CMake module files
+[12.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/rmsentry/DUST_Infantry_Vision/src/build/auto_aim_interfaces
+[12.261s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces' for CMake config files
+[12.261s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'cmake_prefix_path')
+[12.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.ps1'
+[12.262s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.dsv'
+[12.263s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.sh'
+[12.263s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib'
+[12.263s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'ld_library_path_lib')
+[12.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.ps1'
+[12.264s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.dsv'
+[12.264s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.sh'
+[12.265s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/bin'
+[12.265s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib/pkgconfig/auto_aim_interfaces.pc'
+[12.265s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib/python3.10/site-packages'
+[12.266s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/bin'
+[12.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.ps1'
+[12.267s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv'
+[12.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.sh'
+[12.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.bash'
+[12.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.zsh'
+[12.268s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/colcon-core/packages/auto_aim_interfaces)
+[12.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auto_aim_interfaces)
+[12.269s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces' for CMake module files
+[12.270s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces' for CMake config files
+[12.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'cmake_prefix_path')
+[12.271s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.ps1'
+[12.272s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.dsv'
+[12.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/cmake_prefix_path.sh'
+[12.272s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib'
+[12.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('auto_aim_interfaces', 'ld_library_path_lib')
+[12.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.ps1'
+[12.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.dsv'
+[12.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/hook/ld_library_path_lib.sh'
+[12.274s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/bin'
+[12.274s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib/pkgconfig/auto_aim_interfaces.pc'
+[12.274s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/lib/python3.10/site-packages'
+[12.274s] Level 1:colcon.colcon_core.environment:checking '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/bin'
+[12.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.ps1'
+[12.275s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.dsv'
+[12.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.sh'
+[12.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.bash'
+[12.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/auto_aim_interfaces/package.zsh'
+[12.277s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rmsentry/DUST_Infantry_Vision/src/install/auto_aim_interfaces/share/colcon-core/packages/auto_aim_interfaces)
+[12.277s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.278s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.278s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.278s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.284s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.284s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.284s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.294s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.294s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmsentry/DUST_Infantry_Vision/src/install/local_setup.ps1'
+[12.296s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rmsentry/DUST_Infantry_Vision/src/install/_local_setup_util_ps1.py'
+[12.298s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmsentry/DUST_Infantry_Vision/src/install/setup.ps1'
+[12.299s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmsentry/DUST_Infantry_Vision/src/install/local_setup.sh'
+[12.300s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rmsentry/DUST_Infantry_Vision/src/install/_local_setup_util_sh.py'
+[12.300s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmsentry/DUST_Infantry_Vision/src/install/setup.sh'
+[12.301s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmsentry/DUST_Infantry_Vision/src/install/local_setup.bash'
+[12.302s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmsentry/DUST_Infantry_Vision/src/install/setup.bash'
+[12.303s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rmsentry/DUST_Infantry_Vision/src/install/local_setup.zsh'
+[12.304s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rmsentry/DUST_Infantry_Vision/src/install/setup.zsh'

@@ -8,8 +8,8 @@ using namespace std::chrono_literals;
 
 namespace io
 {
-HikRobot::HikRobot(double exposure_ms, double gain, const std::string & vid_pid)
-: exposure_us_(exposure_ms * 1e3), gain_(gain), queue_(1), daemon_quit_(false), vid_(-1), pid_(-1)
+HikRobot::HikRobot(double exposure_ms, double gain, const std::string & vid_pid, int device_index)
+: exposure_us_(exposure_ms * 1e3), gain_(gain), queue_(1), daemon_quit_(false), vid_(-1), pid_(-1), device_index_(device_index)
 {
   set_vid_pid(vid_pid);
   if (libusb_init(NULL)) tools::logger()->warn("Unable to init libusb!");
@@ -70,7 +70,15 @@ void HikRobot::capture_start()
     return;
   }
 
-  ret = MV_CC_CreateHandle(&handle_, device_list.pDeviceInfo[0]);
+  // 选择指定索引的设备
+  unsigned int target_index = device_index_;
+  if (target_index >= device_list.nDeviceNum) {
+    tools::logger()->warn("Device index {} out of range, only {} devices found", target_index, device_list.nDeviceNum);
+    target_index = 0;
+  }
+  tools::logger()->info("Using HikRobot camera at index {}", target_index);
+
+  ret = MV_CC_CreateHandle(&handle_, device_list.pDeviceInfo[target_index]);
   if (ret != MV_OK) {
     tools::logger()->warn("MV_CC_CreateHandle failed: {:#x}", ret);
     return;

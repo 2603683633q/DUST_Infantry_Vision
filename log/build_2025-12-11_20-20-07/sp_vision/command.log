@@ -1,0 +1,4 @@
+Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision': /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_vision
+Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision' returned '0': /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_vision
+Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision': /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/build/sp_vision -- -j12 -l12
+Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision' returned '2': /usr/local/bin/cmake --build /home/rmsentry/DUST_Infantry_Vision/build/sp_vision -- -j12 -l12

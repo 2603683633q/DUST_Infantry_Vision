@@ -1,0 +1,2 @@
+/usr/bin/ar qc libio.a CMakeFiles/io.dir/hikrobot/hikrobot.cpp.o CMakeFiles/io.dir/mindvision/mindvision.cpp.o CMakeFiles/io.dir/usbcamera/usbcamera.cpp.o CMakeFiles/io.dir/camera.cpp.o CMakeFiles/io.dir/cboard.cpp.o CMakeFiles/io.dir/dm_imu/dm_imu.cpp.o CMakeFiles/io.dir/gimbal/gimbal.cpp.o CMakeFiles/io.dir/ros2/publish2nav.cpp.o CMakeFiles/io.dir/ros2/ros2.cpp.o CMakeFiles/io.dir/ros2/subscribe2nav.cpp.o
+/usr/bin/ranlib libio.a
