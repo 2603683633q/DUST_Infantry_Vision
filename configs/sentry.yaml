@@ -9,7 +9,7 @@ yolo11_model_path: assets/yolo11.xml
 yolov8_model_path: assets/yolov8.xml
 yolov5_model_path: assets/yolov5.xml
 device: GPU
-min_confidence: 0.5
+min_confidence: 0.8
 use_traditional: true
 
 #####-----ROI-----#####
@@ -68,13 +68,13 @@ outpost_max_temp_lost_count: 75
 #####-----aimer参数-----#####
 yaw_offset: -0.8 # degree -2.5
 pitch_offset: -1  # degree 2
-comming_angle: 60 # degree
+comming_angle: 80 # degree
 leaving_angle: 20 # degree
 left_yaw_offset: -1
 right_yaw_offset: -0.6
 decision_speed: 10 # rad/s
-high_speed_delay_time: 0.026 # s
-low_speed_delay_time: 0.010 # s
+high_speed_delay_time: 0.000 # s
+low_speed_delay_time: 0.000 # s
 
 #####-----shooter参数-----#####
 first_tolerance: 5 # 近距离射击容差，degree
@@ -84,8 +84,6 @@ auto_fire: true # 是否由自瞄控制射击
 
 #####-----decider参数-----#####
 mode: 1
-
-Q_yaw: [9e6, 0] # yaw过程噪声
 
 #####-----工业相机标定参数-----#####
 R_gimbal2imubody: [1, 0, 0, 0, 1, 0, 0, 0, 1]
@@ -116,6 +114,7 @@ vid_pid_1: "2bdf:0001"
 #####-----planner参数-----#####
 fire_thresh: 0.003
 max_yaw_acc: 50
+Q_yaw: [9e9, 0] 
 R_yaw: [1]
 max_pitch_acc: 100
 Q_pitch: [9e6, 0]

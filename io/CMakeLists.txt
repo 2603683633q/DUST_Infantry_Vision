@@ -41,6 +41,7 @@ target_link_libraries(io MvCameraControl MVSDK usb-1.0 yaml-cpp serial)
 find_package(ament_cmake QUIET)
 find_package(rclcpp QUIET)
 find_package(std_msgs QUIET)
+find_package(sensor_msgs QUIET)
 find_package(rosidl_typesupport_cpp QUIET)
 find_package(sp_msgs QUIET)
 
@@ -51,9 +52,9 @@ else()
     message(STATUS "ROS2 environment found, compiling ROS2-related code.")
     
     # 添加 ROS2 相关的文件
-    target_sources(io PRIVATE ros2/publish2nav.cpp ros2/ros2.cpp ros2/subscribe2nav.cpp)
+    target_sources(io PRIVATE ros2/publish2nav.cpp ros2/ros2.cpp ros2/subscribe2nav.cpp ros2/gimbal_joint_state_pub.cpp)
 
     # 设置 ROS2 依赖
     include_directories(${std_msgs_INCLUDE_DIRS})
-    ament_target_dependencies(io rclcpp std_msgs sp_msgs)
+    ament_target_dependencies(io rclcpp std_msgs sp_msgs sensor_msgs)
 endif()

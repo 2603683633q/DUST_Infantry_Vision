@@ -3,6 +3,8 @@
 
 #include "publish2nav.hpp"
 #include "subscribe2nav.hpp"
+#include "gimbal_joint_state_pub.hpp"
+#include "../gimbal/gimbal.hpp"
 
 namespace io
 {
@@ -18,6 +20,10 @@ public:
   std::vector<int8_t> subscribe_enemy_status();
 
   std::vector<int8_t> subscribe_autoaim_target();
+
+  void publish_gimbal_joint_state(
+    const Gimbal & gimbal,
+    const std::chrono::steady_clock::time_point & timestamp);
 
   template <typename T>
   std::shared_ptr<rclcpp::Publisher<T>> create_publisher(
@@ -36,9 +42,11 @@ public:
 private:
   std::shared_ptr<Publish2Nav> publish2nav_;
   std::shared_ptr<Subscribe2Nav> subscribe2nav_;
+  std::shared_ptr<GimbalJointStatePublisher> gimbal_joint_state_pub_;
 
   std::unique_ptr<std::thread> publish_spin_thread_;
   std::unique_ptr<std::thread> subscribe_spin_thread_;
+  std::unique_ptr<std::thread> gimbal_spin_thread_;
 };
 
 }  // namespace io

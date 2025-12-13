@@ -1,0 +1,2 @@
+Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision': /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_vision
+Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision' returned '0': /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_vision

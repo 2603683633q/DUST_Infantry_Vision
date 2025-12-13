@@ -1,0 +1,44 @@
+[0.005s] Invoking command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision': /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_vision
+[0.010s] -- --------------------CMAKE_BUILD_TYPE: Release--------------------
+[0.148s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.150s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.154s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.160s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.168s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.190s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.191s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.252s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.305s] -- ROS2 environment found, compiling ROS2-related code.
+[0.381s] -- Found AMD headers in: /usr/include/suitesparse
+[0.382s] -- Found AMD library: /usr/lib/x86_64-linux-gnu/libamd.so
+[0.382s] -- Found CAMD headers in: /usr/include/suitesparse
+[0.382s] -- Found CAMD library: /usr/lib/x86_64-linux-gnu/libcamd.so
+[0.382s] -- Found CCOLAMD headers in: /usr/include/suitesparse
+[0.382s] -- Found CCOLAMD library: /usr/lib/x86_64-linux-gnu/libccolamd.so
+[0.382s] -- Found CHOLMOD headers in: /usr/include/suitesparse
+[0.382s] -- Found CHOLMOD library: /usr/lib/x86_64-linux-gnu/libcholmod.so
+[0.382s] -- Found COLAMD headers in: /usr/include/suitesparse
+[0.382s] -- Found COLAMD library: /usr/lib/x86_64-linux-gnu/libcolamd.so
+[0.382s] -- Found SPQR headers in: /usr/include/suitesparse
+[0.382s] -- Found SPQR library: /usr/lib/x86_64-linux-gnu/libspqr.so
+[0.382s] -- Found Config headers in: /usr/include/suitesparse
+[0.382s] -- Found Config library: /usr/lib/x86_64-linux-gnu/libsuitesparseconfig.so
+[0.382s] -- Found Intel Thread Building Blocks (TBB) library (2021.5 / ) include location: . Assuming SuiteSparseQR was compiled with TBB.
+[0.382s] -- Adding librt to SuiteSparse_config libraries (required on Linux & Unix [not OSX] if SuiteSparse is compiled with timing).
+[0.385s] -- Could NOT find METIS (missing: METIS_INCLUDE_DIR METIS_LIBRARY) 
+[0.386s] -- Found required Ceres dependency: Eigen version 3.4.0 in /usr/share/eigen3/cmake
+[0.387s] -- Found required Ceres dependency: glog
+[0.388s] -- Found required Ceres dependency: gflags
+[0.388s] -- Found Ceres version: 2.2.0 installed in: /usr/local with components: [EigenSparse, SparseLinearAlgebraLibrary, LAPACK, SuiteSparse, SchurSpecializations]
+[0.518s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.519s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.523s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.529s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.537s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.560s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.560s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.620s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.675s] -- Configuring done (0.7s)
+[0.872s] -- Generating done (0.1s)
+[0.875s] -- Build files have been written to: /home/rmsentry/DUST_Infantry_Vision
+[0.885s] Invoked command in '/home/rmsentry/DUST_Infantry_Vision/build/sp_vision' returned '0': /usr/local/bin/cmake /home/rmsentry/DUST_Infantry_Vision -DCMAKE_INSTALL_PREFIX=/home/rmsentry/DUST_Infantry_Vision/install/sp_vision

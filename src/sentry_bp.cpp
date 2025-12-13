@@ -10,6 +10,7 @@
 #include "io/cboard.hpp"  // for ShootMode enum
 #include "io/ros2/publish2nav.hpp"
 #include "io/ros2/ros2.hpp"
+#include "io/ros2/gimbal_joint_state_pub.hpp"
 #include "tasks/auto_aim/aimer.hpp"
 #include "tasks/auto_aim/shooter.hpp"
 #include "tasks/auto_aim/solver.hpp"
@@ -97,6 +98,7 @@ int main(int argc, char * argv[])
     /// ROS2通信
     Eigen::Vector4d target_info = decider.get_target_info(armors, targets);
 
+    ros2.publish_gimbal_joint_state(gimbal, timestamp);
     ros2.publish(target_info);
   }
   return 0;
